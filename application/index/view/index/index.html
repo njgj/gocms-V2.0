@@ -1,0 +1,300 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+<title>龚俊的个人小站</title>
+<link rel="icon" href="favicon.ico">
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/main.css">
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/animate.min.css">
+<script type="text/javascript" src="__STATIC__/include/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="__STATIC__/include/bootstrap.min.js"></script>
+<script type="text/javascript" src="__STATIC__/include/jquery.flexslider-min.js"></script>
+<script type="text/javascript" src="__STATIC__/include/bootstrap-dialog.js"></script>
+<script src="__STATIC__/include/wow.min.js"></script>
+<script src="__STATIC__/include/tooltip.js"></script>
+<script src="__STATIC__/include/jquery.qrcode.min.js"></script>
+<script src="__STATIC__/include/my.validator.js"></script>
+<script src="__STATIC__/include/jquery.form.min.js"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="__STATIC__/include/html5shiv.js"></script>
+  <script src="__STATIC__/include/respond.min.js"></script>
+<![endif]-->
+<script>
+$(function () { 
+  $('[data-toggle="popover"]').popover({html:true})
+  
+  $('#myform').validator();
+  
+  $('.pic-list li').hover(function(){
+      $(this).find('.bg').stop(true,false).animate({top:0},500);
+  },function(){
+      $(this).find('.bg').stop(true,false).animate({top:"280px"},500);
+  });
+  
+  $('#myform').ajaxForm({
+		 type: "post",  //提交方式
+		 url: "sendemail.php", //请求url  
+		 success: function (msg) { //提交成功的回调函数  
+		     if(msg=='1'){
+			 BootstrapDialog.alert('您的留言提交成功',function(){ document.getElementById('myform').reset(); });
+			 }else{
+			 BootstrapDialog.alert(msg);
+			 }
+			 
+		 }
+  });
+})
+</script>
+</head>
+
+<body>
+
+{include file="public/header,public/focus"}
+<div id="service" class="line">
+   <div class="container">
+        <h2 class="title">服务范围<small>Service</small></h2>
+        <div class="row">
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInX">
+                <img src="__STATIC__/images/l-ic1-h.png">
+                <h3>网站建设</h3>
+                <small>website construction</small>
+            </div>
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInX">
+                <img src="__STATIC__/images/l-ic2-h.png">
+                <h3>项目运营</h3>
+                <small>technical support</small>
+            </div>
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInX">
+                <img src="__STATIC__/images/l-ic3-h.png">
+                <h3>微信开发</h3>
+                <small>development weixin</small>
+            </div>
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInX">
+                <img src="__STATIC__/images/l-ic5-h.png">
+                <h3>系统开发</h3>
+                <small>development system</small>
+            </div>
+        </div>
+       
+    </div>
+</div>
+
+<div id="case" class="line">
+   <div class="container">
+        <h2 class="title">成功案例<small>Case</small></h2>
+        <div class="pic-list">
+            <ul class="slides">
+                <li>
+                    <img src="__STATIC__/images/金册网.png">
+                    <div class="bg">
+                    <div class="txt">金册网</div>
+                    <a href="http://www.vtest.org" target="_blank" class="btn-case">+</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="__STATIC__/images/苏南国家自主创新示范区.png">
+                    <div class="bg">
+                    <div class="txt">苏南国家自主创新示范区</div>
+                    <a href="http://www.s-park.org.cn/blue/" target="_blank" class="btn-case">+</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="__STATIC__/images/南京高新区建设促进服务中心.png">
+                    <div class="bg">
+                    <div class="txt">南京高新区建设促进服务中心</div>
+                    <a href="http://www.s-park.org.cn/njgxq/" target="_blank" class="btn-case">+</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="__STATIC__/images/常熟高新区建设促进服务中心.png">
+                    <div class="bg">
+                    <div class="txt">常熟高新区建设促进服务中心</div>
+                    <a href="http://www.s-park.org.cn/csgxq/" target="_blank" class="btn-case">+</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="__STATIC__/images/相城高新区建设促进服务中心.png">
+                    <div class="bg">
+                    <div class="txt">相城高新区建设促进服务中心</div>
+                    <a href="http://www.s-park.org.cn/szxc/" target="_blank" class="btn-case">+</a>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+       
+    </div>
+</div>
+<script>
+
+$(document).ready(function() {
+	$('.pic-list').flexslider({
+		animation: "slide",
+		animationLoop: true,
+		directionNav: true,
+		controlNav: false,
+		itemWidth: 240,
+		itemMargin: 10,
+		minItems: 2,
+		maxItems: 4
+	});
+});
+</script>
+
+<div id="process" class="line">
+   <div class="container">
+        <h2 class="title">服务流程<small>Process</small></h2>
+        <div class="row">
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY">
+                <img src="__STATIC__/images/mod-custom01.png">
+                <h3>需求沟通</h3>
+                <p>倾听客户需求，了解用户使用环境和操作流程</p>
+            </div>
+            
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY">
+                <img src="__STATIC__/images/mod-custom02.png">
+                <h3>项目策划</h3>
+                <p>头脑风景交互情景模拟原型设计</p>
+            </div>  
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY">
+                <img src="__STATIC__/images/mod-custom03.png">
+                <h3>交互设计</h3>
+                <p>从用户的角度思考，模拟用户行为</p>
+            </div>  
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY">
+                <img src="__STATIC__/images/mod-custom04.png">
+                <h3>视觉创意</h3>
+                <p>色彩及平面元素设定，结构和布局规范确认</p>
+            </div>  
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY" data-wow-delay="0.5s">
+                <img src="__STATIC__/images/mod-custom05.png">
+                <h3>前端制作</h3>
+                <p>HTML5、CSS3、JS实现页面的动态展示</p>
+            </div>    
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY" data-wow-delay="0.5s">
+                <img src="__STATIC__/images/mod-custom06.png">
+                <h3>技术开发</h3>
+                <p>数据对接与程序开发</p>
+            </div>   
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY" data-wow-delay="0.5s">
+                <img src="__STATIC__/images/mod-custom07.png">
+                <h3>测试反馈</h3>
+                <p>修改调整，规范完善</p>
+            </div>
+            <div class="item col-md-3 col-sm-6 col-xs-6 wow flipInY" data-wow-delay="0.5s">
+                <img src="__STATIC__/images/mod-custom08.png">
+                <h3>上线维护</h3>
+                <p>项目上线，运行维护</p>
+            </div>                                
+        </div>
+       
+    </div>
+</div>
+
+<div id="aboutus" class="line">
+   <div class="container">
+        <h2 class="title">关于我<small>About me</small></h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="resume">
+                   <div class="row border">
+                       <div class="col-md-6 text-center">
+                           <div class="face"><img src="__STATIC__/images/face.png" class="img-circle img-thumbnail"></div>
+                           <h4 style="margin:10px auto">龚俊</h4>
+                           <p class="mylabel">
+                            <span class="label label-primary">南京</span>
+                            <span class="label label-warning">10年经验</span>
+                            <span class="label label-primary">34岁</span>
+                            <span class="label label-success">中级职称</span>
+                            <span class="label label-success">本科</span>
+                            <span class="label label-warning">web前端</span>
+                            <span class="label label-warning">PHP</span>
+                            <span class="label label-primary">信息服务</span>
+                            </p>
+                       </div>
+                       <div class="col-md-6">
+                           1982年10月出生，本科学历，中级工程师。2006年6月至今，在江苏省生产力促进中心创新平台管理与服务处担任技术经理职务。围绕科技系统信息服务，从事软件开发、研究等工作，先后参与省级科研项目6项，并作为主要开发人员，先后开发了金册网（江苏省一站式检测公共服务平台）、苏南国家自主创新示范区等网站，获取软件著作权10多项（主要开发）。
+                        </div>   
+                    </div>   
+                    <div class="box skill wow flipInX">
+                         <div class="hd"><h3>技能特长<small>Skill</small></h3></div>    
+                         <div class="bd">
+						  <div class="col-xs-5 text-right">PHP/LAMP/LNMP</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">熟练    <span class="sr-only">90% Complete (success)</span>
+  </div>
+</div>
+                          <div class="col-xs-5 text-right">Asp+Sqlserver+IIS</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">熟练    <span class="sr-only">90% Complete (success)</span>
+  </div>
+</div>
+                          <div class="col-xs-5 text-right">Html5+Css3</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">熟练    <span class="sr-only">90% Complete (success)</span>
+  </div>
+</div>
+                          <div class="col-xs-5 text-right">Javascript+Jquery+Bootstrap</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">良好    <span class="sr-only">70% Complete (success)</span>
+  </div>
+</div>
+ 
+                          <div class="col-xs-5 text-right">Photoshop+CDR</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">良好    <span class="sr-only">70% Complete (success)</span>
+  </div>
+</div>
+                     
+                          <div class="col-xs-5 text-right">Linux</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">一般    <span class="sr-only">50% Complete (success)</span>
+  </div>
+</div>
+                          <div class="col-xs-5 text-right">Python、Vue</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">Studying...    <span class="sr-only">30% Complete (success)</span>
+  </div>
+</div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+                <ul class="tel border">
+                    <li class="col-xs-3"><a href="javascript:;"  data-container="body" data-toggle="popover" data-placement="top" data-content="<img src='images/weixin.png' height=200>"><img src="__STATIC__/images/so-weixin.png"/></a></li>
+                    <li class="col-xs-3"><a href="http://wpa.qq.com/msgrd?v=3&uin=117680527&site=qq&menu=yes" target="_blank"><img src="__STATIC__/images/so-qq.png"/></a></li>
+                    <li class="col-xs-3"><a href="mailto:gongjun123321@163.com"><img src="__STATIC__/images/so-mail.png"/></a></li>
+                    <li class="col-xs-3"><a href="###"><img src="__STATIC__/images/so-iphone.png"/></a></li>
+                    <div class="clearfix"></div>
+                </ul>
+                
+             
+                <form id="myform" method="post" action="sendemail.php">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="realname" id="realname" placeholder="姓名" datatype="Require">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="tel" id="tel" placeholder="电话" datatype="Require">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="email" id="email" placeholder="邮箱" datatype="Require">
+                  </div>
+                  <div class="form-group">
+                    <textarea name="content" rows="5"  class="form-control" id="content" placeholder="留言" datatype="Limit" min=1></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-success btn-lg btn-block">我要留言</button>
+                </form>
+            </div>
+        </div>
+       
+    </div>
+</div>
+{include file="public/footer"}
+</body>
+</html>

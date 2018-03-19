@@ -1,0 +1,3476 @@
+---------------------------------------------------------------
+[ 2018-02-06T14:04:09+08:00 ] 127.0.0.1 GET /tp5/public/
+[ info ] 127.0.0.1:8080/tp5/public/ [运行时间：0.248014s][吞吐率：4.03req/s] [内存消耗：1,261.16kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=39',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\www\www\tp5\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:04:29+08:00 ] 127.0.0.1 GET /tp5/public/
+[ info ] 127.0.0.1:8080/tp5/public/ [运行时间：0.112006s][吞吐率：8.93req/s] [内存消耗：1,261.38kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=40',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\www\www\tp5\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:05:30+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.106006s][吞吐率：9.43req/s] [内存消耗：1,245.23kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=43',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:05:38+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.079004s][吞吐率：12.66req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=44',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:05:38+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=45',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:05:40+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=46',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:05:52+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=47',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:06:17+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.100005s][吞吐率：10.00req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=48',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:06:44+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=49',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:06:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=50',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:07:59+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.085004s][吞吐率：11.76req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=51',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:08:02+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=52',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:08:04+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=53',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T14:08:05+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,245.62kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; monitor_count=54',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:03:38+08:00 ] 127.0.0.1 GET /tp5/public/
+[ info ] 127.0.0.1:8080/tp5/public/ [运行时间：0.082004s][吞吐率：12.19req/s] [内存消耗：1,261.30kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=72',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\www\www\tp5\application\index\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:03:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.072005s][吞吐率：13.89req/s] [内存消耗：1,245.45kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=73',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T15:53:12+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,245.82kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=74',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:00:58+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.093006s][吞吐率：10.75req/s] [内存消耗：1,245.82kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=75',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:02:35+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.141008s][吞吐率：7.09req/s] [内存消耗：1,398.82kb] [文件加载：51]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=76',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]include(head.php): failed to open stream: No such file or directory[E:\www\www\tp5\runtime\temp\eded1807fdd823c5b776c8a6aa83a762.php:14]
+[ error ] [2]include(head.php): failed to open stream: No such file or directory[E:\www\www\tp5\runtime\temp\eded1807fdd823c5b776c8a6aa83a762.php:14]
+---------------------------------------------------------------
+[ 2018-02-06T16:09:24+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：1,362.02kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=77',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:09:24+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=78',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:12+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,364.48kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=78',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:12+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=79',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:14+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=79',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:14+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=80',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:19+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=80',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:19+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=81',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:34+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=81',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:34+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=82',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:42+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=82',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:42+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.146008s][吞吐率：6.85req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=83',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:44+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=83',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:44+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=84',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:46+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=84',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:10:46+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=85',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:02+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=85',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:02+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.099006s][吞吐率：10.10req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=86',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:03+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=86',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:03+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.100006s][吞吐率：10.00req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=87',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:07+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=87',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:08+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=87',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:22+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=87',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:55+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,245.99kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=87',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:12:55+08:00 ] 127.0.0.1 GET /tp5/public/index.php/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/welcome.html [运行时间：0.095006s][吞吐率：10.53req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'welcome',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:13:12+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:13:13+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:13:36+08:00 ] 127.0.0.1 GET /tp5/public/index.php/33
+[ info ] 127.0.0.1:8080/tp5/public/index.php/33 [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,050.41kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '33',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:13:37+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:20+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.108006s][吞吐率：9.26req/s] [内存消耗：1,413.44kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=88',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:20+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.106007s][吞吐率：9.43req/s] [内存消耗：1,294.32kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=89',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:21+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：1,294.41kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=89',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:55+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,294.37kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=89',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:55+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：1,294.32kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=90',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:17:56+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：1,294.41kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=90',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:18:05+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,294.37kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=90',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:18:05+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,294.32kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=91',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:18:05+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.096006s][吞吐率：10.42req/s] [内存消耗：1,294.41kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=91',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:20:21+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：1,413.63kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=91',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:20:21+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.092006s][吞吐率：10.87req/s] [内存消耗：1,294.33kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=92',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:20:21+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/index.html [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：1,294.42kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=92',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:20:28+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=92',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:20:29+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=92',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:24:52+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.086004s][吞吐率：11.63req/s] [内存消耗：1,413.07kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=92',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:24:52+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/public/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/public/welcome.html [运行时间：0.128008s][吞吐率：7.81req/s] [内存消耗：1,058.48kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'public',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=93',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:28:30+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.095005s][吞吐率：10.53req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=93',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:28:31+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.084004s][吞吐率：11.90req/s] [内存消耗：1,050.47kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=93',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:28:33+08:00 ] 127.0.0.1 GET /tp5/public/index.php/33
+[ info ] 127.0.0.1:8080/tp5/public/index.php/33 [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,050.41kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '33',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=93',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:34:42+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,364.62kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=93',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:34:43+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：1,245.98kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=94',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:34:44+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,245.98kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=95',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:36:50+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：1,413.12kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=96',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:36:51+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.169010s][吞吐率：5.92req/s] [内存消耗：1,271.06kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=97',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:20+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.150009s][吞吐率：6.67req/s] [内存消耗：1,073.80kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=97',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[E:\www\www\tp5\application\manage\controller\Index.php:18]
+---------------------------------------------------------------
+[ 2018-02-06T16:37:22+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,073.80kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=98',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[E:\www\www\tp5\application\manage\controller\Index.php:18]
+---------------------------------------------------------------
+[ 2018-02-06T16:37:23+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,073.80kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=99',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[E:\www\www\tp5\application\manage\controller\Index.php:18]
+---------------------------------------------------------------
+[ 2018-02-06T16:37:37+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=100',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:37+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.118006s][吞吐率：8.47req/s] [内存消耗：1,358.54kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=101',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:45+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=101',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:46+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.155009s][吞吐率：6.45req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=102',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:46+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=102',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.119007s][吞吐率：8.40req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=103',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.081005s][吞吐率：12.34req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=103',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.120007s][吞吐率：8.33req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=104',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:47+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=104',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:48+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.123007s][吞吐率：8.13req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=105',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:48+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=105',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:37:48+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.131007s][吞吐率：7.63req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=106',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:14+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：1,294.82kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=106',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:14+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.102005s][吞吐率：9.80req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=107',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.067003s][吞吐率：14.92req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=107',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.113006s][吞吐率：8.85req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=108',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:17+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.075004s][吞吐率：13.33req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=108',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:17+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.173009s][吞吐率：5.78req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=109',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:18+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=109',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:18+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:41:21+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:42:23+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/news_manage.php [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:42:33+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:44:12+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/news_manage.php
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/news_manage.php [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,050.48kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'news_manage.php',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:44:18+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：1,413.63kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=110',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:44:18+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.118006s][吞吐率：8.47req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=111',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:44:18+08:00 ] 127.0.0.1 GET /tp5/public/index.php/test/
+[ info ] 127.0.0.1:8080/tp5/public/index.php/test/ [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,050.44kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'test',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=111',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:45:29+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：1,413.63kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=111',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:45:29+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.097005s][吞吐率：10.31req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=112',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:45:30+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/index
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/index [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,050.45kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=112',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:46:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,294.88kb] [文件加载：46]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=112',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:46:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.103006s][吞吐率：9.71req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=113',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:46:17+08:00 ] 127.0.0.1 GET /tp5/public/index.php/news/index
+[ info ] 127.0.0.1:8080/tp5/public/index.php/news/index [运行时间：0.074004s][吞吐率：13.51req/s] [内存消耗：1,050.45kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'news',
+    1 => 'index',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=113',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:48:56+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：1,413.62kb] [文件加载：48]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=113',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->index[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:48:56+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/index/welcome.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/index/welcome.html [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：1,246.48kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'index',
+    2 => 'welcome',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\Index->welcome[ E:\www\www\tp5\application\manage\controller\Index.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\index\welcome.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:48:58+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/news/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/news/index.html [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,361.08kb] [文件加载：47]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\News->index[ E:\www\www\tp5\application\manage\controller\News.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\news\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:48:58+08:00 ] 127.0.0.1 GET /tp5/public/index.php/layui/css/layui.css
+[ info ] 127.0.0.1:8080/tp5/public/index.php/layui/css/layui.css [运行时间：0.069003s][吞吐率：14.49req/s] [内存消耗：1,050.10kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'layui',
+    1 => 'css',
+    2 => 'layui.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:48:59+08:00 ] 127.0.0.1 GET /tp5/public/index.php/layui/layui.js
+[ info ] 127.0.0.1:8080/tp5/public/index.php/layui/layui.js [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：1,050.10kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'layui',
+    1 => 'layui.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:49:00+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/common.js
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/common.js [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：1,058.02kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'common.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:55:15+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/news/index.html
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/news/index.html [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：1,245.98kb] [文件加载：45]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'news',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\manage\controller\News->index[ E:\www\www\tp5\application\manage\controller\News.php ]
+[ info ] [ VIEW ] E:\www\www\tp5\public/../application/manage\view\news\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:55:15+08:00 ] 127.0.0.1 GET /tp5/public/index.php/layui/css/layui.css
+[ info ] 127.0.0.1:8080/tp5/public/index.php/layui/css/layui.css [运行时间：0.083005s][吞吐率：12.05req/s] [内存消耗：1,050.10kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'layui',
+    1 => 'css',
+    2 => 'layui.css',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => 'text/css,*/*;q=0.1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:55:15+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/common.js
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/common.js [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：1,058.05kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'common.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:55:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/layui/layui.js
+[ info ] 127.0.0.1:8080/tp5/public/index.php/layui/layui.js [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：1,050.10kb] [文件加载：38]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'layui',
+    1 => 'layui.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-02-06T16:55:16+08:00 ] 127.0.0.1 GET /tp5/public/index.php/manage/common.js
+[ info ] 127.0.0.1:8080/tp5/public/index.php/manage/common.js [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,058.05kb] [文件加载：41]
+[ info ] [ LANG ] E:\www\www\tp5\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'manage',
+    1 => 'common.js',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=96992031.3246486058646656000.1517559232967.084; PHPSESSID=a344ltfnl4ihou28nnjedqqh74; monitor_count=114',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1:8080/tp5/public/index.php/manage/news/index.html',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
