@@ -15,7 +15,9 @@ class User extends Base
         if(!empty($data['groupid'])){
             $map['groupid']=$data['groupid'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
 		$res=model('UserInfo')->where($map)->order("userid desc")->paginate(['query'=> $data]);
 	    //dump($res);
 		$this->assign([
@@ -79,7 +81,14 @@ class User extends Base
         $res=model('UserInfo')->where('userid','in',input('post.id'))->delete();
         return $res;
     }
-	
+
+    public function chk(){
+        $res=model('UserInfo')->save(['states'=>input('post.states/d')],[
+            'userid'=>input('post.id/d')
+        ]);
+        return $res;
+    }
+
     public function detail(){
         $res=model('UserInfo')->where('userid',input('userid/d'))->find();
         $this->assign([
@@ -92,7 +101,7 @@ class User extends Base
 
 		return $this->fetch();
     }
-	
+
     public function savepwd(){
 		$data=input('post.');
 		//dump($data);

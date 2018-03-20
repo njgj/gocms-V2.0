@@ -16,7 +16,9 @@ class News extends Base
         if(!empty($data['classid'])){
             $map['classid']=$data['classid'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
         $res=model('News')->where($map)->order("id desc")->paginate(['query'=> $data]);
         //dump($res);
         $this->assign([
@@ -88,6 +90,13 @@ class News extends Base
 
     public function del(){
         $res=model('News')->where('id','in',input('post.id'))->delete();
+        return $res;
+    }
+
+    public function chk(){
+        $res=model('News')->save(['states'=>input('post.states/d')],[
+            'id'=>input('post.id/d')
+        ]);
         return $res;
     }
 

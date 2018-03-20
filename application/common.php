@@ -71,6 +71,18 @@ function chkState($num,$font=1) {
     return $v;
 }
 
+function getStateOption($st='',$no='-3,-1,2'){
+	$str='';
+	for($i=-3;$i<=2;$i++){
+	   if(strpos(','.$no.',',','.$i.',')===false){
+	       $str.="<option value='$i'";
+	       if($st!='' && $st==$i){$str.=' selected';}
+	       $str.=">".chkState($i,0)."</option>";
+	   } 
+	}
+    return "<option value=''>- 状态 -</option>".$str;
+}
+
 /* 审核是否 */
 function chkIsYes($st,$font=1) {
     if($st==0){$v='<span class="layui-badge">否</span>';}
@@ -88,6 +100,21 @@ function replaceKey($key,$text){
         }
     }
     return $text;
+}
+
+/*
+inputName:控件名称 
+defaultValue:默认值
+defaultName:默认名称*/
+function isyes($inputName,$defaultValue=NULL,$defaultArray=array('是'=>1,'否'=>0)){
+	foreach($defaultArray as $k=>$v){
+		   $nstr='';
+		   if($v==$defaultValue){
+			  $nstr=' checked'; 
+		   }
+		   $str.="<input type='radio' name='$inputName' id='$inputName$v' value='$v'$nstr><label for='$inputName$v'>$k</label>&nbsp;";
+	}
+	return $str;
 }
 
 /*inputType:radio/checkbox/select
@@ -131,6 +158,30 @@ function selectBox($tableName,$inputType,$inputName,$id,$defaultValue=NULL,$zdNa
     return $str2;
 }
 
+/*'id:所属大类id
+'defaultValue:默认值(多值用","分隔)*/
+function readCheckBox($tableName,$id,$defaultValue,$zdName='classid'){
+    global $db;
+	$sql="select * from $tableName where parentid=$id order by orderid";
+	$query=$db->query($sql);
+	while($row=$db->fetch_array($query)){
+			$flag=false;
+			$arr=explode(',',$defaultValue);
+			foreach($arr as $v){
+			    if(!empty($v)){
+				    if($v==$row[$zdName]){
+					     $flag=true;
+						 break;
+					}
+				}
+			}
+			$mstr=($flag==true)?'checked':'';
+			$str.="<input type=checkbox name=s value='".$row[$zdName]."' $mstr onclick='return false'/>".$row['classname']."&nbsp;";
+	}
+	return $str;
+}
+
+
 //获取类名
 function getClassName($tablename,$classid){
     return db($tablename)->where('classid',$classid)->value('classname');
@@ -157,5 +208,5 @@ function getGroupOption($groupid){
         if($row['groupid']==(int)$groupid){ $str.=' selected'; }
         $str.='>'.$row['groupname'].'</option>';
     }
-    return "<option value=''>- 请选择 -</option>".$str;
+    return "<option value=''>- 用户类型 -</option>".$str;
 }

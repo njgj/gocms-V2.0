@@ -13,6 +13,11 @@
                 {:getTreeOption('nclass_video',0,$Request.get.classid)}
             </select>
         </div>
+        <div class="layui-input-inline">
+            <select name="states">
+                {:getStateOption($Request.get.states)}
+            </select>
+        </div>
         <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
         <a class="layui-btn layui-btn-normal" onClick="newdialog('新增','__MAN__/video/add',1000,550)">新增</a>
         <a class="layui-btn layui-btn-danger" onClick="delAll('__MAN__/video/del')">批量删除</a>
@@ -43,7 +48,12 @@
             <td>{$v.addtime}</td>
             <td>{$v.states|chkState}</td>
             <td>
-               <!-- <a class="layui-btn layui-btn-xs" onClick="newdialog('详情','__MAN__/video/detail/id/{$v.id}',1000,550)">查看</a>-->
+                <div class="layui-inline" style="width: 100px; margin-right: 20px;">
+                    <select name="states" lay-filter="chkstates" data-id="{$v.id}">
+                        {:getStateOption()}
+                    </select>
+                </div>
+                <!-- <a class="layui-btn layui-btn-xs" onClick="newdialog('详情','__MAN__/video/detail/id/{$v.id}',1000,550)">查看</a>-->
                 <a class="layui-btn layui-btn-xs layui-btn-normal" onClick="newdialog('编辑','__MAN__/video/edit/id/{$v.id}',1000,550)">编辑</a>
                 <a class="layui-btn layui-btn-xs layui-btn-danger" onClick="del(this,'{$v.title}','__MAN__/video/del',{$v.id})">删除</a></a></td>
         </tr>

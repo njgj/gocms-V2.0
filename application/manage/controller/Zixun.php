@@ -16,7 +16,9 @@ class Zixun extends Base
         if(!empty($data['classid'])){
             $map['classid']=$data['classid'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
         $res=model('Zixun')->where($map)->order("id desc")->paginate(['query'=> $data]);
         //dump($res);
         $this->assign([
@@ -92,4 +94,10 @@ class Zixun extends Base
         return $res;
     }
 
+    public function chk(){
+        $res=model('Zixun')->save(['states'=>input('post.states/d')],[
+            'id'=>input('post.id/d')
+        ]);
+        return $res;
+    }
 }

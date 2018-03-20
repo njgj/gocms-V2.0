@@ -16,7 +16,9 @@ class Link extends Base
         if(!empty($data['classid'])){
             $map['classid']=$data['classid'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
         $res=model('Link')->where($map)->order("id desc")->paginate(['query'=> $data]);
         //dump($res);
         $this->assign([
@@ -81,4 +83,10 @@ class Link extends Base
         return $res;
     }
 
+    public function chk(){
+        $res=model('Link')->save(['states'=>input('post.states/d')],[
+            'id'=>input('post.id/d')
+        ]);
+        return $res;
+    }
 }

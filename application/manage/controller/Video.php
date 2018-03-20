@@ -16,7 +16,9 @@ class Video extends Base
         if(!empty($data['classid'])){
             $map['classid']=$data['classid'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
         $res=model('Video')->where($map)->order("id desc")->paginate(['query'=> $data]);
         //dump($res);
         $this->assign([
@@ -84,4 +86,10 @@ class Video extends Base
         return $res;
     }
 
+    public function chk(){
+        $res=model('Video')->save(['states'=>input('post.states/d')],[
+            'id'=>input('post.id/d')
+        ]);
+        return $res;
+    }
 }
