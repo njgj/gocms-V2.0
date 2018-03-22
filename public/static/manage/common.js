@@ -124,7 +124,27 @@ layui.use(['layer','table','form'], function(){
 			});	
       }
 
-
+	//formname 表单名称 | textid 文本框ID | codeid 返回ID | ID 分类ID 0:不限 | isdx 是否多选:1 | flag 是否限制选择(单选):1
+	window.opentree=function(options){
+		var defaults={
+			tablename:'nclass',
+			textid:'classname',
+			codeid:'classid',
+			id:0,
+			isdx:0,
+			flag:0,
+			iscode:0
+		};
+		var options=$.extend(defaults ,options);
+		window.layer.open({
+			type: 2,
+			skin: 'layui-layer-lan',
+			title:'请选择...',
+			area: ['260px', '440px'],
+			maxmin: false,
+			content:__ROOT__+'/manage/tree?tb='+options.tablename+'&textid='+options.textid+'&codeid='+options.codeid+'&id='+options.id+'&isdx='+options.isdx+'&flag='+options.flag+'&iscode='+options.iscode
+		});
+	}
 });
 
 
@@ -157,19 +177,6 @@ function getSampleEditor(t){
 		]
 	};
 	return KindEditor.create('textarea[name='+t+']',option);  
-}
-
-//formname 表单名称 | textid 文本框ID | codeid 返回ID | ID 分类ID 0:不限 | isdx 是否多选:1 | flag 是否限制选择(单选):1
-function opentree(tablename,textid,codeid,id,isdx,flag){
-	var reval = arguments[6] ? arguments[6] : '';//兼容设置第7个参数的默认值为空 
-	window.layer.open({
-	  type: 2,
-	  skin: 'layui-layer-lan',
-	  title:'请选择...',
-	  area: ['260px', '440px'],
-	  maxmin: false,
-	  content:'/yqpt/tree.php?tablename='+tablename+'&textid='+textid+'&codeid='+codeid+'&id='+id+'&isdx='+isdx+'&flag='+flag+'&reval='+reval
-	});	
 }
 
 function newdialog(title,url,w,h){
@@ -239,14 +246,19 @@ function onCheck(event, treeId, treeNode) {
 function assignment(nodes) {
     var names = "";
     var ids = "";
+    var codes = "";
     for (var i = 0, l = nodes.length; i < l; i++) {
         names += nodes[i].name + ",";
         ids += nodes[i].id + ",";
+        codes += nodes[i].code + ",";
     }
     if (names.length > 0) {
         names = names.substring(0, names.length - 1);
         ids = ids.substring(0, ids.length - 1);
+        codes = codes.substring(0, codes.length - 1);
     }
     //alert(ids);
+    $("#names").attr("value", names);
     $("#ids").attr("value", ids);
+    $("#codes").attr("value", codes);
 }

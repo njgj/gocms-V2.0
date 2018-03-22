@@ -19,7 +19,8 @@
 	<div class="layui-form-item">
 		<label class="layui-form-label">设备分类编码</label>
 		<div class="layui-input-block">
-			<input type="text" name="instrCategory" id="instrCategory" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}">         
+			<input type="text" name="instrCategoryName" id="instrCategoryName" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'instrCategoryName',codeid:'instrCategory',id:1,flag:1})">
+			<input type="text" name="instrCategory" id="instrCategory" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
