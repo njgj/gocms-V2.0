@@ -1,0 +1,250 @@
+//config的设置是全局的
+layui.config({
+    base: '/gocms-V2.0/public/static/manage/' //假设这是你存放拓展模块的根目录
+}).extend({ //设定模块别名
+    mymod: 'mymod' //如果 mymod.js 是在根目录，也可以不用设定别名
+});
+
+//通用方法
+layui.use(['layer','table','form'], function(){
+    var $ = layui.jquery
+        ,layer = layui.layer
+		,table = layui.table
+		,form = layui.form;
+	
+    //添加验证规则
+    form.verify({
+		//value：表单的值、item：表单的DOM对象
+        password : function(value, item){
+            if(value.length < 6){
+                return "密码长度不能小于6位";
+            }
+	        if(value.length >20){
+                return "密码长度最多20位";
+            }	
+        },
+        confirmPwd : function(value, item){
+            if(!new RegExp($("#userpwd").val()).test(value)){
+                return "两次输入密码不一致，请重新输入！";
+            }
+        }
+    })	
+	
+	
+	form.on('checkbox(chkAll)', function(data){
+		 /* console.log(data.elem); //得到checkbox原始DOM对象
+		  console.log(data.elem.checked); //是否被选中，true或者false
+		  console.log(data.value); //复选框value值，也可以通过data.elem.value得到
+		  console.log(data.othis); //得到美化后的DOM对象*/
+		  //alert(data.elem.checked);
+		  $("input[name='id[]']:checkbox").each(function(){ 
+			  $(this).prop("checked", data.elem.checked); 
+			  
+		  });
+		  form.render('checkbox'); 
+	}); 
+	
+	form.on('select(chkstates)', function(data){
+		  //alert($(data.elem).attr('data-id'));
+		   var v = data.value;
+		   if(v!=''){
+			   $.ajax({
+					type: "POST",
+					url: 'chk',
+					data: {id:$(data.elem).attr('data-id'),states:v},
+					success: function(data){
+						//alert(data);
+						if(data>0){
+							window.location.reload();	
+						}else{
+							layer.msg('审核重复或失败');
+						}
+					}
+				});			   
+		   }
+	}); 
+	
+	
+	window.del=function(obj,msg,url,id){
+			var tr=$(obj).parent().parent();
+			//alert(tr.text());
+			layer.confirm('确定要删除“'+msg+'”吗？',{icon:3}, function(index){
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: {id:id},
+					success: function(data){
+						//alert(data);
+						if(data>0){
+							if(data==1){
+								tr.remove(); 
+							}else{
+								window.location.reload();
+							}
+						}else{
+							layer.msg('删除失败');
+						}
+						layer.close(index); 
+					}
+				});
+
+			});	
+	}
+	
+     window.delAll=function(url) {
+		  var ids =[];//定义一个数组  
+		  $("input[name='id[]']:checked").each(function(){
+		     ids.push($(this).val());
+		  });
+		  if(ids.length==0){
+			  layer.msg('请先选中要删除的行');
+			  return false;
+		  }else{
+			  ids=ids.join(",");//转字符串
+		  }
+		  //alert(ids);
+			layer.confirm('确定要批量删除吗？',{icon:3}, function(index){
+				$.ajax({
+					type: "POST",
+					url: url,
+					data: {id:ids},
+					success: function(data){
+						//alert(data);
+						if(data>0){
+							window.location.reload();
+						}else{
+							layer.msg('删除失败');
+						}
+						layer.close(index); 
+					}
+				});
+
+			});	
+      }
+
+
+});
+
+
+
+
+function getEditor(t){
+    var option={
+		allowFileManager : false,
+		urlType : 'domain',
+		items : [
+		'source', '|', 'undo', 'redo', '|', 'preview', 'print', 'template', 'code', 'cut', 'copy', 'paste',
+		'plainpaste', 'wordpaste', '|', 'justifyleft', 'justifycenter', 'justifyright',
+		'justifyfull', 'insertorderedlist', 'insertunorderedlist', 'indent', 'outdent', 'subscript',
+		'superscript', 'clearhtml', 'quickformat', 'selectall', '|', 'fullscreen', '/',
+		'formatblock', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold',
+		'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image', 'multiimage',
+		'flash', 'media', 'insertfile', 'table', 'hr', 'emoticons', 'baidumap', 'pagebreak',
+		'anchor', 'link', 'unlink', '|', 'about']
+	};
+	return KindEditor.create('textarea[name='+t+']',option);  
+}
+function getSampleEditor(t){
+    var option={
+		allowFileManager : false,
+		urlType : 'domain',
+		items : [
+			'source', 'quickformat', 'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+			'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+			'insertunorderedlist', '|', 'link', 'unlink', '|', 'image', 'fullscreen'
+		]
+	};
+	return KindEditor.create('textarea[name='+t+']',option);  
+}
+
+//formname 表单名称 | textid 文本框ID | codeid 返回ID | ID 分类ID 0:不限 | isdx 是否多选:1 | flag 是否限制选择(单选):1
+function opentree(tablename,textid,codeid,id,isdx,flag){
+	var reval = arguments[6] ? arguments[6] : '';//兼容设置第7个参数的默认值为空 
+	window.layer.open({
+	  type: 2,
+	  skin: 'layui-layer-lan',
+	  title:'请选择...',
+	  area: ['260px', '440px'],
+	  maxmin: false,
+	  content:'/yqpt/tree.php?tablename='+tablename+'&textid='+textid+'&codeid='+codeid+'&id='+id+'&isdx='+isdx+'&flag='+flag+'&reval='+reval
+	});	
+}
+
+function newdialog(title,url,w,h){
+
+	var index=window.layer.open({
+	  id:'layerwin',
+	  type: 2,
+	  skin: 'layui-layer-lan',
+	  title:title,
+	  area: [w+'px', h+'px'],
+	  maxmin: true,
+	  //content: absurl+url+s+'timeStamp='+ new Date().getTime()
+		content: url
+	});
+	layer.full(index);
+}
+
+//id div的id，isMultiple 是否多选，chkboxType 多选框类型{"Y": "ps", "N": "s"} 详细请看ztree官网
+function initTree(id, isMultiple, chkboxType) {
+    var setting = {
+        view: {
+            dblClickExpand: false,
+            showLine: false
+        },
+        data: {
+            simpleData: {
+                enable: true
+            }
+        },
+        check: {
+            enable: false,
+            chkboxType: {"Y": "ps", "N": "s"}
+        },
+        callback: {
+            onClick: onClick,
+            onCheck: onCheck
+        }
+
+    };
+    if (isMultiple) {
+        setting.check.enable = isMultiple;
+    }
+    if (chkboxType !== undefined && chkboxType != null) {
+        setting.check.chkboxType = chkboxType;
+    }
+
+    return $.fn.zTree.init($("#" + id), setting, zNodes);
+}
+
+function onClick(event, treeId, treeNode) {
+    var zTree = $.fn.zTree.getZTreeObj(treeId);
+    if (zTree.setting.check.enable == true) {
+        zTree.checkNode(treeNode, !treeNode.checked, false)
+        assignment(zTree.getCheckedNodes());
+    } else {
+        assignment(zTree.getSelectedNodes());
+
+    }
+}
+
+function onCheck(event, treeId, treeNode) {
+    var zTree = $.fn.zTree.getZTreeObj(treeId);
+    assignment(zTree.getCheckedNodes());
+}
+
+
+function assignment(nodes) {
+    var names = "";
+    var ids = "";
+    for (var i = 0, l = nodes.length; i < l; i++) {
+        names += nodes[i].name + ",";
+        ids += nodes[i].id + ",";
+    }
+    if (names.length > 0) {
+        names = names.substring(0, names.length - 1);
+        ids = ids.substring(0, ids.length - 1);
+    }
+    //alert(ids);
+    $("#ids").attr("value", ids);
+}
