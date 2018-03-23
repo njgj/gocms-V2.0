@@ -20,7 +20,7 @@
 		<label class="layui-form-label">设备分类编码</label>
 		<div class="layui-input-block">
 			<input type="text" name="instrCategoryName" id="instrCategoryName" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'instrCategoryName',codeid:'instrCategory',id:1,flag:1})">
-			<input type="text" name="instrCategory" id="instrCategory" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}">
+			<input type="hidden" name="instrCategory" id="instrCategory" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
@@ -33,9 +33,7 @@
 		<div class="layui-inline">
 			<label class="layui-form-label">仪器设备来源</label>
 			<div class="layui-input-block">
-				<select name="instrSource" lay-verify="required">
-					<option value="">- 请选择 -</option>
-				</select>         
+					{$res.instrSource|default=0|selectBox='nclass_select','select','instrSource',4,###}
 			</div>
 		</div>
 		<div class="layui-inline">
@@ -67,13 +65,13 @@
 		<div class="layui-inline">
 			<label class="layui-form-label">产地国别</label>
 			<div class="layui-input-block">
-				<input type="text" name="nation" id="nation" required  lay-verify="required" placeholder="请输入产地国别" class="layui-input" value="{$res.nation|default=''}">
+				{$res.nation|default=''|selectBox='nclass_nation','select','nation',0,###,'code'}
 			</div>
 		</div>
 		<div class="layui-inline">
 			<label class="layui-form-label">是否海关监管</label>
 			<div class="layui-input-block">
-				<input type="checkbox" name="instrSupervise" lay-skin="switch"  lay-text="ON|OFF">
+				<input type="checkbox" name="instrSupervise" lay-skin="switch"  lay-text="ON|OFF" {eq name="$res.instrSupervise|default=0" value="1" }checked{/eq}>
 			</div>
 		</div>
 	</div>
@@ -142,9 +140,7 @@
 	<div class="layui-form-item">
 		<label class="layui-form-label">运行状态</label>
 		<div class="layui-input-block">
-			<select name="status" lay-verify="required">
-				<option value="">- 请选择 -</option>
-			</select>         
+			{$res.status|default=0|selectBox='nclass_select','select','status',6,###}
 		</div>
 	</div>
 	<div class="layui-form-item">

@@ -126,7 +126,7 @@ function selectBox($tableName,$inputType,$inputName,$id,$defaultValue=NULL,$zdNa
     global $db;
     $classname=getClassName($tableName,$id);
     $res=db($tableName)->where('parentid',$id)->order('orderid')->select();
-    $str='';
+    $str=$mstr='';
     foreach ($res as $row){
         if(strtolower($inputType)=='radio' || strtolower($inputType)=='checkbox'){
             $flag=false;

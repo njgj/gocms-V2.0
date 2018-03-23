@@ -140,9 +140,9 @@ layui.use(['layer','table','form'], function(){
 			type: 2,
 			skin: 'layui-layer-lan',
 			title:'请选择...',
-			area: ['260px', '440px'],
+			area: ['260px', '450px'],
 			maxmin: false,
-			content:__ROOT__+'/manage/tree?tb='+options.tablename+'&textid='+options.textid+'&codeid='+options.codeid+'&id='+options.id+'&isdx='+options.isdx+'&flag='+options.flag+'&iscode='+options.iscode
+			content:__ROOT__+'/manage/tree?tb='+options.tablename+'&textid='+options.textid+'&codeid='+options.codeid+'&id='+options.id+'&isdx='+options.isdx+'&flag='+options.flag+'&iscode='+options.iscode+'&tmp='+new Date().getTime()
 		});
 	}
 });

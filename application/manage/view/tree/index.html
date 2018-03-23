@@ -1,15 +1,22 @@
 {include file='public/header'}
 <body>
+<p>
+<div class="layui-inline">
+    <input type="text" name="key" id="key" class="layui-input" placeholder="请输入关键词">
+</div>
+<button class="layui-btn" onclick="getNodesByParamFuzzy()">查询</button>
+</p>
 
+    <ul id="demo" class="ztree" style="margin: 10px 0"></ul>
 
-    <ul id="demo" class="ztree"></ul>
+    <input type="hidden" name='names' id='names' readonly>
+    <input type="hidden" name='ids' id='ids' readonly>
+    <input type="hidden" name='codes' id='codes' readonly>
 
-    <input type="text" name='names' id='names' readonly>
-    <input type="text" name='ids' id='ids' readonly>
-    <input type="text" name='codes' id='codes' readonly>
-
+<p align="center">
     <button class="layui-btn"  onclick="getValue()">确定</button>
-    <button class="layui-btn"  onclick="clearValue()">取消</button>
+    <button class="layui-btn layui-btn-danger"  onclick="clearValue()">取消</button>
+</p>
 
 {include file='public/footer'}
 <script src="__STATIC__/ztree/js/jquery-1.4.4.min.js"></script>
@@ -69,14 +76,16 @@
                 }
                 //alert(msg);
             } else {
-                alert("没有找到匹配的节点，请更换搜索条件");
+                layer.msg("没有找到匹配的节点");
             }
+        }else{
+            layer.msg("请输入关键词查询");
         }
     }
 
     function zTreeOnBeforeClick(treeId, treeNode) {
         var check = (treeNode && !treeNode.isParent);
-        if (!check)  alert("请选择其子节点！");
+        if (!check)  layer.msg("请选择其子节点！");
         return check;
     }
 
