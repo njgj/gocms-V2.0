@@ -6,8 +6,8 @@
 		<label class="layui-form-label">{$v.COLUMN_COMMENT|default='未定义'}</label>
 		<div class="layui-input-block">
 			{if $v.DATA_TYPE=='varchar' or $v.DATA_TYPE=='date'}<input type="text" name="{$v.COLUMN_NAME}" id="{$v.COLUMN_NAME}" required  lay-verify="required" placeholder="请输入{$v.COLUMN_COMMENT}" class="layui-input" value="{res.{$v.COLUMN_NAME}|default=''}">{/if}
-			{if $v.DATA_TYPE=='float' or $v.DATA_TYPE=='double' or $v.DATA_TYPE=='decimal'}<input type="number" name="{$v.COLUMN_NAME}" required  lay-verify="number" placeholder="请输入{$v.COLUMN_COMMENT}" class="layui-input">{/if}       
-			{if $v.DATA_TYPE=='text'}<textarea name="{$v.COLUMN_NAME}" placeholder="请输入{$v.COLUMN_COMMENT}" class="layui-textarea"></textarea>{/if}
+			{if $v.DATA_TYPE=='float' or $v.DATA_TYPE=='double' or $v.DATA_TYPE=='decimal'}<input type="number" name="{$v.COLUMN_NAME}" required  lay-verify="number" placeholder="请输入{$v.COLUMN_COMMENT}" class="layui-input" value="{res.{$v.COLUMN_NAME}|default=''}">{/if}
+			{if $v.DATA_TYPE=='text'}<textarea name="{$v.COLUMN_NAME}" placeholder="请输入{$v.COLUMN_COMMENT}" class="layui-textarea">{res.{$v.COLUMN_NAME}|default=''}</textarea>{/if}
 			{if $v.DATA_TYPE=='tinyint'}<input type="checkbox" name="{$v.COLUMN_NAME}" lay-skin="switch"  lay-text="ON|OFF">{/if} {if $v.DATA_TYPE=='int'}<select name="{$v.COLUMN_NAME}" lay-verify="required">
 				<option value="">- 请选择 -</option>
 			</select>{/if}         

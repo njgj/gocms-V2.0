@@ -8,10 +8,11 @@ layui.config({
 });
 
 //通用方法
-layui.use(['layer','table','form'], function(){
+layui.use(['layer','table','form','laydate'], function(){
     var $ = layui.jquery
         ,layer = layui.layer
 		,table = layui.table
+        ,laydate = layui.laydate
 		,form = layui.form;
 	
     //添加验证规则
@@ -145,6 +146,13 @@ layui.use(['layer','table','form'], function(){
 			content:__ROOT__+'/manage/tree?tb='+options.tablename+'&textid='+options.textid+'&codeid='+options.codeid+'&id='+options.id+'&isdx='+options.isdx+'&flag='+options.flag+'&iscode='+options.iscode+'&tmp='+new Date().getTime()
 		});
 	}
+
+    //执行多laydate实例
+    $(".layui-date").each(function () {
+        laydate.render({
+            elem: this //指定元素
+        });
+    });
 });
 
 

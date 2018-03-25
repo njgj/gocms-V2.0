@@ -5,6 +5,7 @@
 <table width="100%" border="1" class="layui-table">
    <thead>
     <tr>
+        <th>ID</th>
       <th>类别</th>
       <th>编码</th>
       <th>排序</th>
@@ -14,6 +15,7 @@
   <tbody>
    {volist name='res' id='v'}
     <tr>
+        <td>{$v.classid}</td>
       <td style="padding-left: {$v.level*30}px">&nbsp;├&nbsp;{$v.classname}</td>
       <td>{$v.code|default=''}</td>
       <td>{$v.orderid}</td>

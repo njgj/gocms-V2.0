@@ -35,12 +35,14 @@ function tree($data,$pid=0,$level = 1){
 	return $arr;
 }
 
-function getTreeOption($tableName,$pid=0,$defaultid=0){
-    $data=db($tableName)->where('FIND_IN_SET('.$pid.',classpath)')->order('orderid')->select();
+function getTreeOption($tableName,$pid=0,$defaultid=0,$self=0){
+    $map='FIND_IN_SET('.$pid.',classpath)';
+    $map.=($self==0)?' and classid!='.$pid:'';
+    $data=db($tableName)->where($map)->order('orderid')->select();
     //dump($data);
     $str='';
     if($data) {
-        $arr = tree($data);
+        $arr = tree($data,$pid);
         foreach ($arr as $v) {
             $slt = '';
             if ($v['classid'] == $defaultid) {
@@ -186,9 +188,36 @@ function readCheckBox($tableName,$id,$defaultValue,$zdName='classid'){
 function getClassName($tablename,$classid){
     return db($tablename)->where('classid',$classid)->value('classname');
 }
-
-function getClassPath($tablename,$classpath){
-    return db($tablename)->where('classid',$classid)->value('classname');
+function getClassPath($tablename,$classpath,$line=' > '){
+    $arr=explode($classpath,',');
+    $str='';
+    foreach ($arr as $v){
+        if(strlen($v)){
+            $str.=getClassName($tablename,$v).$line;
+        }
+    }
+    return $str;
+}
+function getCodeName($tablename,$code){
+    return db($tablename)->where('code',$code)->value('classname');
+}
+function getCodePath($tablename,$code,$line=' > '){
+    $str='';
+    switch (strlen($code)){
+        case strlen($code)<4:
+            $str=getCodeName($tablename,$code);
+            break;
+        case 4:
+            $str=getCodeName($tablename,substr($code,0,2)).$line;
+            $str.=getCodeName($tablename,$code);
+            break;
+        case 6:
+            $str=getCodeName($tablename,substr($code,0,2)).$line;
+            $str.=getCodeName($tablename,substr($code,0,4)).$line;
+            $str.=getCodeName($tablename,$code);
+            break;
+    }
+    return $str;
 }
 
 //获取用户名称

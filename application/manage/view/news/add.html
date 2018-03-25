@@ -34,7 +34,7 @@
         <div class="layui-inline">
             <label class="layui-form-label">时间</label>
             <div class="layui-input-block">
-                <input type="text" name="addtime" id="addtime" class="layui-input"  value="{$res.addtime|default=''}">
+                <input type="text" name="addtime" id="addtime" class="layui-input layui-date"  value="{$res.addtime|default=''}">
             </div>
         </div>
 
@@ -79,9 +79,8 @@
 {include file='public/footer'}
 <script>
     getEditor('content');
-    layui.use(['form','laydate','mymod'], function(){
+    layui.use(['form','mymod'], function(){
         var form = layui.form
-            ,laydate = layui.laydate
             ,mymod = layui.mymod;
 
         mymod.upfile({
@@ -91,10 +90,6 @@
             dir:'__STATIC__/uploadfile'
         });
 
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#addtime' //指定元素
-        });
         //监听提交
         form.on('submit(OK)', function(data){
             //layer.msg(JSON.stringify(data.field));

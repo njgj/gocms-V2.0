@@ -10,13 +10,15 @@ class Inst extends Base
         //dump($data);
         $map=[];
 
-        if(!empty($data['title'])){
-            $map['title']=['like','%'.$data['title'].'%'];
+        if(!empty($data['cname'])){
+            $map['cname']=['like','%'.$data['cname'].'%'];
         }
-        if(!empty($data['classid'])){
-            $map['classid']=$data['classid'];
+        if(!empty($data['instrCategory'])){
+            $map['instrCategory']=['like','%'.$data['instrCategory'].'%'];
         }
-
+        if(@$data['states']!=''){
+            $map['states']=$data['states'];
+        }
         $res=model('Inst')->where($map)->order("id desc")->paginate(['query'=> $data]);
         //dump($res);
         $this->assign([
@@ -59,9 +61,9 @@ class Inst extends Base
     {
         $data = input('post.');
         $rule = [
-            'title|标题' => 'require|min:2',
-            'classid|类别' => 'number',
-            'content|内容' => 'require'
+            'cname|仪器设备名称' => 'require|min:2',
+            'instrCategory|设备分类编码' => 'require',
+            'technical|主要技术指标' => 'require'
         ];
         //$validate = Validate::make($rule, $msg);
         $validate = new Validate($rule);
@@ -73,8 +75,8 @@ class Inst extends Base
                 $data['userid']=session('userid');
                 $data['addtime']=date('Y-m-d H:i:s');
                 if(model('Inst')->allowField(true)->save($data)){
-                    htmlendjs('新增成功');
-                    //$this->success('新增成功','index');
+                    //htmlendjs('新增成功');
+                    $this->success('新增成功','index');
                 }
             }
 
@@ -89,6 +91,12 @@ class Inst extends Base
 
     public function del(){
         $res=model('Inst')->where('id','in',input('post.id'))->delete();
+        return $res;
+    }
+    public function chk(){
+        $res=model('Inst')->save(['states'=>input('post.states/d')],[
+            'id'=>input('post.id/d')
+        ]);
         return $res;
     }
 

@@ -19,33 +19,36 @@
 	<div class="layui-form-item">
 		<label class="layui-form-label">设备分类编码</label>
 		<div class="layui-input-block">
-			<input type="text" name="instrCategoryName" id="instrCategoryName" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'instrCategoryName',codeid:'instrCategory',id:1,flag:1})">
-			<input type="hidden" name="instrCategory" id="instrCategory" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}">
+			<input type="text" name="instrCategoryName" id="instrCategoryName" required  lay-verify="required" placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''|getCodePath='nclass_select',###}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'instrCategoryName',codeid:'instrCategory',id:1,flag:1})">
+			<input type="hidden" name="instrCategory" id="instrCategory" value="{$res.instrCategory|default=''}">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">主要学科领域</label>
+		<div class="layui-input-block">
+			<input type="text" name="subjectName" id="subjectName" required  lay-verify="required" placeholder="请输入主要学科领域" class="layui-input" value="{$res.subject|default=''|getCodePath='nclass_select',###}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'subjectName',codeid:'subject',id:2,flag:1})">
+			<input type="hidden" name="subject" id="subject" value="{$res.subject|default=''}">
+
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<div class="layui-inline">
 			<label class="layui-form-label">仪器所在单位内部编码</label>
 			<div class="layui-input-block">
-				<input type="text" name="innerId" id="innerId" required  lay-verify="required" placeholder="请输入仪器所在单位内部编码" class="layui-input" value="{$res.innerId|default=''}">
+				<input type="text" name="innerId" id="innerId" placeholder="请输入仪器所在单位内部编码" class="layui-input" value="{$res.innerId|default=''}">
 			</div>
 		</div>
-		<div class="layui-inline">
-			<label class="layui-form-label">仪器设备来源</label>
-			<div class="layui-input-block">
-					{$res.instrSource|default=0|selectBox='nclass_select','select','instrSource',4,###}
-			</div>
-		</div>
+
 		<div class="layui-inline">
 			<label class="layui-form-label">规格型号</label>
 			<div class="layui-input-block">
-				<input type="text" name="instrVersion" id="instrVersion" required  lay-verify="required" placeholder="请输入规格型号" class="layui-input" value="{$res.instrVersion|default=''}">         
+				<input type="text" name="instrVersion" id="instrVersion" placeholder="请输入规格型号" class="layui-input" value="{$res.instrVersion|default=''}">
 			</div>
 		</div>
 		<div class="layui-inline">
 			<label class="layui-form-label">生产制造商</label>
 			<div class="layui-input-block">
-				<input type="text" name="manufacturer" id="manufacturer" required  lay-verify="required" placeholder="请输入生产制造商" class="layui-input" value="{$res.manufacturer|default=''}">         
+				<input type="text" name="manufacturer" id="manufacturer"  placeholder="请输入生产制造商" class="layui-input" value="{$res.manufacturer|default=''}">
 			</div>
 		</div>		
 	</div>
@@ -53,13 +56,13 @@
 		<div class="layui-inline">
 			<label class="layui-form-label">启用日期</label>
 			<div class="layui-input-block">
-				<input type="text" name="beginDate" id="beginDate" required  lay-verify="required" placeholder="请输入启用日期" class="layui-input" value="{$res.beginDate|default=''}">         
+				<input type="text" name="beginDate" id="beginDate"  placeholder="请输入启用日期" class="layui-input layui-date" value="{$res.beginDate|default=''}">
 			</div>
 		</div>
 		<div class="layui-inline">
 			<label class="layui-form-label">原值</label>
 			<div class="layui-input-block">
-				<input type="number" name="worth" required  lay-verify="number" placeholder="请输入原值" class="layui-input">         
+				<input type="number" name="worth" required  lay-verify="number" placeholder="请输入原值" class="layui-input" value="{$res.worth|default=''}">
 			</div>
 		</div>
 		<div class="layui-inline">
@@ -68,12 +71,7 @@
 				{$res.nation|default=''|selectBox='nclass_nation','select','nation',0,###,'code'}
 			</div>
 		</div>
-		<div class="layui-inline">
-			<label class="layui-form-label">是否海关监管</label>
-			<div class="layui-input-block">
-				<input type="checkbox" name="instrSupervise" lay-skin="switch"  lay-text="ON|OFF" {eq name="$res.instrSupervise|default=0" value="1" }checked{/eq}>
-			</div>
-		</div>
+
 	</div>
 
 	<div class="layui-form-item">
@@ -86,7 +84,8 @@
 		<label class="layui-form-label">所属实验室</label>
 		<div class="layui-input-block">
 			<select name="lab_no" lay-verify="required">
-				<option value="">- 请选择 -</option>
+				<option value="">-请选择-</option>
+				{$res.lab_no|default=0|getTreeOption='nclass_city',1,###}
 			</select>         
 		</div>
 	</div>
@@ -94,84 +93,92 @@
 	<div class="layui-form-item">
 		<label class="layui-form-label">仪器图片</label>
 		<div class="layui-input-block">
-			<input type="text" name="image" id="image" required  lay-verify="required" placeholder="请输入仪器图片" class="layui-input" value="{$res.image|default=''}">         
+			<div class="layui-upload">
+				<button type="button" class="layui-btn" id="upload"><i class="layui-icon">&#xe67c;</i>上传图片</button>
+				<div class="layui-upload-list">
+					<img class="layui-upload-img" id="img" src="__STATIC__/uploadfile/images/{$res.image|default='nopic.png'}" style="height: 100px;" onclick="window.open(this.src)">
+				</div>
+				<input type="hidden" name="image" id="image"  class="layui-input"  value="{$res.image|default=''}">
+			</div>
 		</div>
 	</div>
-
 
 	<div class="layui-form-item">
-		<label class="layui-form-label">仪器设备类别</label>
-		<div class="layui-input-block">
-			<select name="type" lay-verify="required">
-				<option value="">- 请选择 -</option>
-			</select>         
+		<div class="layui-inline">
+			<label class="layui-form-label">仪器设备类别</label>
+			<div class="layui-input-block">
+				{$res.type|default=0|selectBox='nclass_select','radio','type',5,###}
+			</div>
+	    </div>
+		<div class="layui-inline">
+			<label class="layui-form-label">仪器设备来源</label>
+			<div class="layui-input-block">
+				{$res.instrSource|default=0|selectBox='nclass_select','radio','instrSource',4,###}
+			</div>
+		</div>
+		<div class="layui-inline">
+			<label class="layui-form-label">是否海关监管</label>
+			<div class="layui-input-block">
+				<input type="checkbox" name="instrSupervise" lay-skin="switch"  lay-text="ON|OFF" {eq name="$res.instrSupervise|default=0" value="1" }checked{/eq}>
+			</div>
 		</div>
 	</div>
+
 	<div class="layui-form-item">
 		<label class="layui-form-label">主要技术指标</label>
 		<div class="layui-input-block">
-			<textarea name="technical" placeholder="请输入主要技术指标" class="layui-textarea"></textarea>
+			<textarea name="technical" placeholder="请输入主要技术指标" class="layui-textarea">{$res.technical|default=''}</textarea>
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">主要功能</label>
 		<div class="layui-input-block">
-			<textarea name="function" placeholder="请输入主要功能" class="layui-textarea"></textarea>
+			<textarea name="function" placeholder="请输入主要功能" class="layui-textarea">{$res.function|default=''}</textarea>
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">服务内容</label>
 		<div class="layui-input-block">
-			<textarea name="serviceContent" placeholder="请输入服务内容" class="layui-textarea"></textarea>
+			<textarea name="serviceContent" placeholder="请输入服务内容" class="layui-textarea">{$res.serviceContent|default=''}</textarea>
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">服务的典型成果</label>
 		<div class="layui-input-block">
-			<textarea name="achievement" placeholder="请输入服务的典型成果" class="layui-textarea"></textarea>
+			<textarea name="achievement" placeholder="请输入服务的典型成果" class="layui-textarea">{$res.achievement|default=''}</textarea>
 		</div>
 	</div>
-	<div class="layui-form-item">
-		<label class="layui-form-label">主要学科领域</label>
-		<div class="layui-input-block">
-			<input type="text" name="subject" id="subject" required  lay-verify="required" placeholder="请输入主要学科领域" class="layui-input" value="{$res.subject|default=''}">         
-		</div>
-	</div>
-	<div class="layui-form-item">
-		<label class="layui-form-label">运行状态</label>
-		<div class="layui-input-block">
-			{$res.status|default=0|selectBox='nclass_select','select','status',6,###}
-		</div>
-	</div>
+
+
 	<div class="layui-form-item">
 		<label class="layui-form-label">对外开放共享规定</label>
 		<div class="layui-input-block">
-			<textarea name="requirement" placeholder="请输入对外开放共享规定" class="layui-textarea"></textarea>         
+			<textarea name="requirement" placeholder="请输入对外开放共享规定" class="layui-textarea">{$res.requirement|default=''}</textarea>
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">参考收费标准</label>
 		<div class="layui-input-block">
-			<textarea name="fee" placeholder="请输入参考收费标准" class="layui-textarea"></textarea>         
+			<textarea name="fee" placeholder="请输入参考收费标准" class="layui-textarea">{$res.fee|default=''}</textarea>
 		</div>
 	</div>
 
 	<div class="layui-form-item">
 		<label class="layui-form-label">安放地址</label>
 		<div class="layui-input-block">
-			<input type="text" name="region" id="region" required  lay-verify="required" placeholder="请输入安放地址" class="layui-input" value="{$res.region|default=''}">         
+			<input type="text" name="region" id="region"  placeholder="请输入安放地址" class="layui-input" value="{$res.region|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">街道</label>
 		<div class="layui-input-block">
-			<input type="text" name="street" id="street" required  lay-verify="required" placeholder="请输入街道" class="layui-input" value="{$res.street|default=''}">         
+			<input type="text" name="street" id="street"  placeholder="请输入街道" class="layui-input" value="{$res.street|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">房间号</label>
 		<div class="layui-input-block">
-			<input type="text" name="room_no" id="room_no" required  lay-verify="required" placeholder="请输入房间号" class="layui-input" value="{$res.room_no|default=''}">         
+			<input type="text" name="room_no" id="room_no" placeholder="请输入房间号" class="layui-input" value="{$res.room_no|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
@@ -195,42 +202,48 @@
 	<div class="layui-form-item">
 		<label class="layui-form-label">通讯地址</label>
 		<div class="layui-input-block">
-			<input type="text" name="address" id="address" required  lay-verify="required" placeholder="请输入通讯地址" class="layui-input" value="{$res.address|default=''}">         
+			<input type="text" name="address" id="address"  placeholder="请输入通讯地址" class="layui-input" value="{$res.address|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<label class="layui-form-label">邮政编码</label>
 		<div class="layui-input-block">
-			<input type="text" name="postalcode" id="postalcode" required  lay-verify="required" placeholder="请输入邮政编码" class="layui-input" value="{$res.postalcode|default=''}">         
+			<input type="text" name="postalcode" id="postalcode"  placeholder="请输入邮政编码" class="layui-input" value="{$res.postalcode|default=''}">
 		</div>
 	</div>
 	<div class="layui-form-item">
 		<div class="layui-inline">
 			<label class="layui-form-label">共享模式</label>
 			<div class="layui-input-block">
-				<select name="shareMode" lay-verify="required">
-					<option value="">- 请选择 -</option>
-				</select>         
+					{$res.shareMode|default=0|selectBox='nclass_select','radio','shareMode',7,###}
+
 			</div>
 		</div>
 		<div class="layui-inline">
-			<label class="layui-form-label">入网日期</label>
+			<label class="layui-form-label">运行状态</label>
 			<div class="layui-input-block">
-				<input type="text" name="regdate" id="regdate" required  lay-verify="required" placeholder="请输入入网日期" class="layui-input" value="{$res.regdate|default=''}">         
+				{$res.status|default=0|selectBox='nclass_select','radio','status',6,###}
 			</div>
 		</div>
+
 	</div>
 	<div class="layui-form-item">
 		<div class="layui-inline">
+			<label class="layui-form-label">入网日期</label>
+			<div class="layui-input-block">
+				<input type="text" name="regdate" id="regdate" required  lay-verify="required" placeholder="请输入入网日期" class="layui-input  layui-date" value="{$res.regdate|default=''}">
+			</div>
+		</div>
+		<div class="layui-inline">
 			<label class="layui-form-label">开放时段（起）</label>
 			<div class="layui-input-block">
-				<input type="text" name="ot_b_time" id="ot_b_time" required  lay-verify="required" placeholder="请输入开放时段（起）" class="layui-input" value="{$res.ot_b_time|default=''}">         
+				<input type="text" name="ot_b_time" id="ot_b_time" required  lay-verify="required" placeholder="请输入开放时段（起）" class="layui-input layui-date" value="{$res.ot_b_time|default=''}">
 			</div>
 		</div>
 		<div class="layui-inline">
 			<label class="layui-form-label">开放时段（止）</label>
 			<div class="layui-input-block">
-				<input type="text" name="ot_e_time" id="ot_e_time" required  lay-verify="required" placeholder="请输入开放时段（止）" class="layui-input" value="{$res.ot_e_time|default=''}">         
+				<input type="text" name="ot_e_time" id="ot_e_time" required  lay-verify="required" placeholder="请输入开放时段（止）" class="layui-input layui-date" value="{$res.ot_e_time|default=''}">
 			</div>
 		</div>
 	</div>
@@ -252,22 +265,18 @@
 {include file='public/footer'}
 <script>
     getEditor('content');
-    layui.use(['form','laydate','mymod'], function(){
+    layui.use(['form','mymod'], function(){
         var form = layui.form
-            ,laydate = layui.laydate
             ,mymod = layui.mymod;
 
         mymod.upfile({
             id:'#upload',
             type:'images',
+            input:'#image',
             url:'__MAN__/upload',
             dir:'__STATIC__/uploadfile'
         });
 
-        //执行一个laydate实例
-        laydate.render({
-            elem: '#addtime' //指定元素
-        });
         //监听提交
         form.on('submit(OK)', function(data){
             //layer.msg(JSON.stringify(data.field));

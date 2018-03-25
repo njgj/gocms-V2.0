@@ -5,12 +5,15 @@
     <form class="layui-form layui-input-inline"  lay-filter="ssform">
 
         <div class="layui-input-inline">
-            <input type="text" name="title" value="{$Request.get.title}" placeholder="标题" class="layui-input">
+            <input type="text" name="cname" value="{$Request.get.cname}" placeholder="仪器设备名称" class="layui-input">
         </div>
         <div class="layui-input-inline">
-            <select name="classid">
-                <option value="">-请选择-</option>
-                {:getTreeOption('nclass',0,$Request.get.classid)}
+            <input type="text" name="instrCategoryName" id="instrCategoryName"  placeholder="请输入设备分类编码" class="layui-input" value="{$res.instrCategory|default=''}" onclick="opentree({iscode:1,tablename:'nclass_select',textid:'instrCategoryName',codeid:'instrCategory',id:1,flag:0})">
+            <input type="hidden" name="instrCategory" id="instrCategory" value="{$res.instrCategory|default=''}">
+        </div>
+        <div class="layui-input-inline">
+            <select name="states">
+                {:getStateOption($Request.get.states)}
             </select>
         </div>
         <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
@@ -38,10 +41,15 @@
             <td><input type="checkbox" name="id[]" value="{$v.id}" lay-skin="primary"> </td>
             <td>{$v.id}</td>
             <td>{$v.cname}</td>
-            <td></td>
+            <td>{$v.instrCategory|getCodePath='nclass_select',###}</td>
             <td>{$v.addtime}</td>
             <td>{$v.states|chkState}</td>
             <td>
+                <div class="layui-inline" style="width: 100px; margin-right: 20px;">
+                    <select name="states" lay-filter="chkstates" data-id="{$v.id}">
+                        {:getStateOption()}
+                    </select>
+                </div>
                 <a class="layui-btn layui-btn-xs" onClick="newdialog('详情','__MAN__/inst/detail/id/{$v.id}',800,550)">查看</a>
                 <a class="layui-btn layui-btn-xs layui-btn-normal" onClick="newdialog('编辑','__MAN__/inst/edit/id/{$v.id}',800,550)">编辑</a>
                 <a class="layui-btn layui-btn-xs layui-btn-danger" onClick="del(this,'{$v.cname}','__MAN__/inst/del',{$v.id})">删除</a></a></td>
