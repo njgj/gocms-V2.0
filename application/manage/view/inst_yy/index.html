@@ -1,0 +1,75 @@
+{include file='public/header'}
+<body>
+
+<blockquote class="layui-elem-quote" style="text-align: right">
+    <form class="layui-form layui-input-inline"  lay-filter="ssform">
+
+        <div class="layui-input-inline">
+            <input type="text" name="username" value="{$Request.get.username}" placeholder="用户名" class="layui-input">
+        </div>
+        <div class="layui-input-inline">
+            <input type="text" name="cname" value="{$Request.get.cname}" placeholder="仪器设备名称" class="layui-input">
+        </div>
+        <div class="layui-input-inline">
+            <select name="is_check">
+                {:getStateOption($Request.get.states)}
+            </select>
+        </div>
+        <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
+        <a class="layui-btn layui-btn-danger" onClick="delAll('__MAN__/inst/del')">批量删除</a>
+
+    </form>
+</blockquote>
+
+<form class="layui-form" lay-filter="dataform" method="post">
+    <table width="100%" border="1" class="layui-table">
+        <thead>
+        <tr>
+            <th><input type="checkbox" name="chkAll" lay-filter="chkAll" lay-skin="primary"> </th>
+            <th>ID</th>
+            <th>送样单号</th>
+            <th>预约用户</th>
+            <th>姓名</th>
+            <th>送样单位</th>
+            <th>仪器名称</th>
+            <th>预约时间</th>
+            <th>申请时间</th>
+            <th>实际费用（元）</th>
+            <th>状态</th>
+            <th>审核人</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name='res' id='v'}
+        <tr>
+            <td><input type="checkbox" name="id[]" value="{$v.id}" lay-skin="primary"> </td>
+            <td>{$v.id}</td>
+            <td>{$v.bm}</td>
+            <td>{$v.username}</td>
+            <td>{$v.realname}</td>
+            <td>{$v.company}</td>
+            <td>{$v.cname}</td>
+            <td>{$v.r_date}</td>
+            <td>{$v.person_addtime}</td>
+            <td>{$v.feeB}</td>
+            <td>{$v.is_check|chkState}</td>
+            <td>{$v.userid|getUserName}</td>
+            <td>
+                <div class="layui-inline" style="width: 100px; margin-right: 20px;">
+                    <select name="states" lay-filter="chkstates" data-id="{$v.id}">
+                        {:getStateOption()}
+                    </select>
+                </div>
+                <a class="layui-btn layui-btn-xs" onClick="newdialog('详情','__MAN__/inst_yy/detail/id/{$v.id}',800,550)">查看</a>
+                <a class="layui-btn layui-btn-xs layui-btn-normal" onClick="newdialog('编辑','__MAN__/inst_yy/edit/id/{$v.id}',800,550)">编辑</a>
+                <a class="layui-btn layui-btn-xs layui-btn-danger" onClick="del(this,'{$v.bm}','__MAN__/inst_yy/del',{$v.id})">删除</a></a></td>
+        </tr>
+        {/volist}
+    </table>
+</form>
+{$res}
+{include file='public/footer'}
+
+</body>
+</html>
