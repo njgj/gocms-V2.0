@@ -239,3 +239,23 @@ function getGroupOption($groupid){
     }
     return "<option value=''>- 用户类型 -</option>".$str;
 }
+
+//inst
+function getInstOption($id){
+    $res=db('Inst')->where('states>0')->select();
+    $str='';
+    foreach ($res as $row){
+        $str.="<option value='".$row['id']."'";
+        if($row['id']==(int)$id){ $str.=' selected'; }
+        $str.='>'.$row['cname'].'</option>';
+    }
+    return "<option value=''>- 请选择仪器 -</option>".$str;
+}
+
+//order编码
+function getYyBm(){
+    $now=date('ymd');
+    $max=db('inst_yy')->where("date(person_addtime)='".date('Y-m-d')."'")->max('right(bm,3)',false)+1;
+    //return $max;
+    return $now.'-'.substr('00'.$max,-3);
+}

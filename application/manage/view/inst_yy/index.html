@@ -16,7 +16,8 @@
             </select>
         </div>
         <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
-        <a class="layui-btn layui-btn-danger" onClick="delAll('__MAN__/inst/del')">批量删除</a>
+        <a class="layui-btn layui-btn-normal" onClick="newdialog('新增','__MAN__/inst_yy/add',800,550)">新增</a>
+        <a class="layui-btn layui-btn-danger" onClick="delAll('__MAN__/inst_yy/del')">批量删除</a>
 
     </form>
 </blockquote>
@@ -48,7 +49,7 @@
             <td>{$v.bm}</td>
             <td>{$v.username}</td>
             <td>{$v.realname}</td>
-            <td>{$v.company}</td>
+            <td>{$v.company2}</td>
             <td>{$v.cname}</td>
             <td>{$v.r_date}</td>
             <td>{$v.person_addtime}</td>

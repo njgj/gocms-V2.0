@@ -37,13 +37,7 @@ class InstYy extends Base
     }
 
     public function add(){
-
-        $this->assign([
-            'res'=>[
-              'addtime'=>date('Y-m-d')
-            ],
-            'Action'=>'Add'
-        ]);
+        //return getYyBm();
         return $this->fetch();
     }
 
@@ -61,29 +55,21 @@ class InstYy extends Base
     {
         $data = input('post.');
         $rule = [
-            'cname|仪器设备名称' => 'require|min:2',
-            'InstYyrCategory|设备分类编码' => 'require',
-            'technical|主要技术指标' => 'require'
+            'ypname|样品名称' => 'require|min:2',
+            'yps|样品数（个）' => 'require|integer',
+            'instid|仪器' => 'require|integer',
+            'r_date|预约日期' => 'require|date',
         ];
         //$validate = Validate::make($rule, $msg);
         $validate = new Validate($rule);
         if (!$validate->check($data)) {
             $this->error($validate->getError());
         } else {
-
-            if($data['Action']=='Add'){
-                $data['userid']=session('userid');
-                $data['addtime']=date('Y-m-d H:i:s');
-                if(model('InstYy')->allowField(true)->save($data)){
-                    //htmlendjs('新增成功');
-                    $this->success('新增成功','index');
-                }
-            }
-
-            if($data['Action']=='Edit'){
-                $data['addtime']=date('Y-m-d H:i:s');
-                model('InstYy')->allowField(true)->save($data,['id'=>input('id/d')]);
-                htmlendjs('修改成功');
+            $data['bm']=getYyBm();
+            $data['person_id']=session('userid');
+            $data['person_addtime']=date('Y-m-d H:i:s');
+            if(model('InstYy')->allowField(true)->save($data)){
+                htmlendjs('新增成功');
             }
 
         }
