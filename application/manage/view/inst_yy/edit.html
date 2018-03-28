@@ -1,0 +1,170 @@
+{include file='public/header'}
+<body>
+<form class="layui-form layui-form-pane" action="__MAN__/inst_yy/save" method="post">
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">仪器</label>
+		<div class="layui-input-block">
+			<input type="text" name="cname" id="cname"  class="layui-input" value="{$res.cname|default=''}" disabled>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">样品名称</label>
+		<div class="layui-input-block">
+			<input type="text" name="ypname" id="ypname"  class="layui-input" value="{$res.ypname|default=''}" disabled>
+		</div>
+	</div>
+	<div class="layui-form-item">
+	<div class="layui-inline">
+		<label class="layui-form-label">样品数（个）</label>
+		<div class="layui-input-block">
+			<input type="text" name="yps" id="yps"  class="layui-input" value="{$res.yps|default=''}" disabled>
+		</div>
+	</div>
+	<div class="layui-inline">
+		<label class="layui-form-label">申请时间</label>
+		<div class="layui-input-block">
+			<input type="text" name="person_addtime" id="person_addtime"  class="layui-input" value="{$res.person_addtime|default=''}" disabled>
+		</div>
+	</div>
+	</div>
+	<div class="layui-form-item">
+		<div class="layui-inline">
+			<label class="layui-form-label">预约人</label>
+			<div class="layui-input-block">
+				<input type="text" name="username" id="username"  class="layui-input" value="{$res.username|default=''}" disabled>
+			</div>
+		</div>
+		<div class="layui-inline">
+			<label class="layui-form-label">手机</label>
+			<div class="layui-input-block">
+				<input type="text" name="mobile" id="mobile"  class="layui-input" value="{$res.mobile|default=''}" disabled>
+			</div>
+		</div>
+		<div class="layui-inline">
+			<label class="layui-form-label">单位</label>
+			<div class="layui-input-block">
+				<input type="text" name="company2" id="company2"  class="layui-input" value="{$res.company2|default=''}" disabled>
+			</div>
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">实验内容及要求</label>
+		<div class="layui-input-block">
+			<textarea name="person_remark" placeholder="请输入实验内容及要求" class="layui-textarea" disabled>{$res.person_remark|default=''}</textarea>
+		</div>
+	</div>
+	<div class="layui-form-item">
+	<div class="layui-inline">
+		<label class="layui-form-label">预约日期</label>
+		<div class="layui-input-block">
+			<input type="text" name="r_date" id="r_date" required  lay-verify="required" placeholder="请输入预约日期" class="layui-input" value="{$res.r_date|default=''}">
+		</div>
+	</div>
+	<div class="layui-inline">
+		<label class="layui-form-label">开始时间</label>
+		<div class="layui-input-block">
+			<input type="text" name="b_time" id="b_time" required  lay-verify="required" placeholder="请输入开始时间" class="layui-input" value="{$res.b_time|default=''}">
+		</div>
+	</div>
+	<div class="layui-inline">
+		<label class="layui-form-label">结束时间</label>
+		<div class="layui-input-block">
+			<input type="text" name="e_time" id="e_time" required  lay-verify="required" placeholder="请输入结束时间" class="layui-input" value="{$res.e_time|default=''}">
+		</div>
+	</div>
+	</div>
+
+	<div class="layui-form-item">
+		<div class="layui-inline">
+			<label class="layui-form-label">预计费用</label>
+			<div class="layui-input-block">
+				<input type="number" name="feeA" required  lay-verify="number" placeholder="请输入预计费用" class="layui-input" value="{$res.feeA|default=''}">
+			</div>
+		</div>
+		<div class="layui-inline">
+			<label class="layui-form-label">实际费用</label>
+			<div class="layui-input-block">
+				<input type="number" name="feeB" required  lay-verify="number" placeholder="请输入实际费用" class="layui-input" value="{$res.feeB|default=''}">
+			</div>
+		</div>
+	</div>
+
+	<div class="layui-form-item">
+		<label class="layui-form-label">状态</label>
+		<div class="layui-input-block">
+			<input type="checkbox" name="is_check" lay-skin="switch"  lay-text="ON|OFF">
+		</div>
+	</div>
+	<div class="layui-form-item">
+		<label class="layui-form-label">审核意见</label>
+		<div class="layui-input-block">
+			<textarea name="remark" placeholder="请输入审核意见" class="layui-textarea">{$res.remark|default=''}</textarea>
+		</div>
+	</div>
+
+
+
+	<div class="layui-form-item">
+		<div class="layui-input-block">
+			<button class="layui-btn" lay-submit lay-filter="OK">立即提交</button>
+
+
+
+		</div>
+	</div>
+</form>
+
+
+
+
+{include file='public/footer'}
+<script>
+    getEditor('content');
+    layui.use(['form','mymod','laydate'], function(){
+        var form = layui.form
+			,laydate = layui.laydate
+			,$ = layui.jquery
+            ,mymod = layui.mymod;
+
+        mymod.upfile({
+            id:'#upload',
+            type:'images',
+            input:'#image',
+            url:'__MAN__/upload',
+            dir:'__STATIC__/uploadfile'
+        });
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#r_date' //指定元素++
+			,min:0
+            ,max: 7 //7天后
+
+        });
+        laydate.render({
+            elem: '#b_time' //指定元素++
+            ,type:'time'
+            ,format:'HH:mm'
+			,min:'09:00:00'
+            ,max:'17:00:00'
+        });
+        laydate.render({
+            elem: '#e_time' //指定元素++
+            ,type:'time'
+			,format:'HH:mm'
+            ,min:'09:00:00'
+			,max:'17:00:00'
+        });
+        //监听提交
+        form.on('submit(OK)', function(data){
+            //layer.msg(JSON.stringify(data.field));
+            //return false;
+
+        });
+    });
+</script>
+
+</body>
+</html>

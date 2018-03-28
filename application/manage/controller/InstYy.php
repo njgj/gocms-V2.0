@@ -28,7 +28,7 @@ class InstYy extends Base
     }
 
     public function detail(){
-        $res=model('InstYy')->where('id',input('id/d'))->find();
+        $res=db('v_inst_yy')->where('id',input('id/d'))->find();
         //dump($res);
         $this->assign([
             'res'=>$res
@@ -43,12 +43,11 @@ class InstYy extends Base
 
     public function edit(){
 
-        $res=model('InstYy')->where('id',input('id/d'))->find();
+        $res=db('v_inst_yy')->where('id',input('id/d'))->find();
         $this->assign([
-            'res'=>$res,
-            'Action'=>'Edit'
+            'res'=>$res
         ]);
-        return $this->fetch('add');
+        return $this->fetch();
     }
 
     public function save()
