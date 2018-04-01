@@ -1,6 +1,6 @@
 {include file='public/header'}
 <body>
-<form class="layui-form layui-form-pane" action="__MAN__/inst_yy/save" method="post">
+<form class="layui-form layui-form-pane" action="__MAN__/inst_yy/update" method="post">
 
 	<div class="layui-form-item">
 		<label class="layui-form-label">仪器</label>
@@ -92,9 +92,10 @@
 	</div>
 
 	<div class="layui-form-item">
-		<label class="layui-form-label">状态</label>
+		<label class="layui-form-label">审核</label>
 		<div class="layui-input-block">
-			<input type="checkbox" name="is_check" lay-skin="switch"  lay-text="ON|OFF">
+			<input type="radio" name="is_check" title="审核通过" class="layui-input" value="1" {eq name="$res.is_check" value="1"}checked{/eq}>
+			<input type="radio" name="is_check" title="审核不通过" class="layui-input" value="-2" {eq name="$res.is_check" value="-2"}checked{/eq}>
 		</div>
 	</div>
 	<div class="layui-form-item">
@@ -109,7 +110,7 @@
 	<div class="layui-form-item">
 		<div class="layui-input-block">
 			<button class="layui-btn" lay-submit lay-filter="OK">立即提交</button>
-
+			<input type="hidden" name="id" value="{$res.id}">
 
 
 		</div>
@@ -161,6 +162,17 @@
         form.on('submit(OK)', function(data){
             //layer.msg(JSON.stringify(data.field));
             //return false;
+            //console.log(data.field)
+			var is_check=data.field.is_check;
+            if (!is_check){
+                layer.msg('请先审核');
+                return false;
+            }else{
+                if(is_check==-2 && !data.field.remark){
+                    layer.msg('请输入审核不通过理由');
+                    return false;
+				}
+			}
 
         });
     });

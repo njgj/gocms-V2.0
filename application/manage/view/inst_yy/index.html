@@ -18,7 +18,7 @@
         <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
         <a class="layui-btn layui-btn-normal" onClick="newdialog('新增','__MAN__/inst_yy/add',800,550)">新增</a>
         <a class="layui-btn layui-btn-danger" onClick="delAll('__MAN__/inst_yy/del')">批量删除</a>
-
+        <a class="layui-btn layui-btn-success" href="__MAN__/inst_yy/index/Action/xls?{$Request.get|http_build_query}">导出Excel</a>
     </form>
 </blockquote>
 
@@ -57,20 +57,15 @@
             <td>{$v.is_check|chkState}</td>
             <td>{$v.userid|getUserName}</td>
             <td>
-                <div class="layui-inline" style="width: 100px; margin-right: 20px;">
-                    <select name="states" lay-filter="chkstates" data-id="{$v.id}">
-                        {:getStateOption()}
-                    </select>
-                </div>
-                <a class="layui-btn layui-btn-xs" onClick="newdialog('详情','__MAN__/inst_yy/detail/id/{$v.id}',800,550)">查看</a>
-                <a class="layui-btn layui-btn-xs layui-btn-normal" onClick="newdialog('编辑','__MAN__/inst_yy/edit/id/{$v.id}',800,550)">编辑</a>
+                <a class="layui-btn layui-btn-xs layui-btn-normal" onClick="newdialog('审核','__MAN__/inst_yy/edit/id/{$v.id}',800,550)">审核</a>
                 <a class="layui-btn layui-btn-xs layui-btn-danger" onClick="del(this,'{$v.bm}','__MAN__/inst_yy/del',{$v.id})">删除</a></a></td>
         </tr>
         {/volist}
     </table>
 </form>
+{if $Action=='list'}
 {$res}
 {include file='public/footer'}
-
+{/if}
 </body>
 </html>

@@ -1,10 +1,11 @@
 <?php
 namespace app\manage\controller;
+use think\Request;
 use think\Validate;
 
 class InstYy extends Base
 {
-    public function index()
+    public function index($Action='list')
     {
         $data=input('get.');
         //dump($data);
@@ -19,12 +20,26 @@ class InstYy extends Base
         if(@$data['is_check']!=''){
             $map['is_check']=$data['is_check'];
         }
-        $res=db('v_inst_yy')->where($map)->order("id desc")->paginate(['query'=> $data]);
+
+        $list=db('v_inst_yy')->where($map)->order("id desc");
+        if($Action=='list'){
+            $res=$list->paginate(['query'=> $data]);
+            $this->assign([
+                'Action'=>$Action,
+                'res'=>$res
+            ]);
+            return $this->fetch();
+        }else{
+            $res=$list->select();
+            $this->assign([
+                'Action'=>$Action,
+                'res'=>$res
+            ]);
+            export($Action,$this->fetch());
+        }
+
         //dump($res);
-        $this->assign([
-            'res'=>$res
-        ]);
-        return $this->fetch();
+
     }
 
     public function detail(){
@@ -74,14 +89,33 @@ class InstYy extends Base
         }
     }
 
+    public function update()
+    {
+        $data = input('post.');
+        $rule = [
+            'r_date|预约日期' => 'require|date',
+            'b_time|开始时间' => 'require',
+            'e_time|结束时间' => 'require',
+            'feeB|实际费用' => 'require|number',
+            'is_check|审核状态' => 'require|integer',
+            'remark|审核意见' => 'requireIf:is_check,-2',
+
+        ];
+        //$validate = Validate::make($rule, $msg);
+        $validate = new Validate($rule);
+        if (!$validate->check($data)) {
+            $this->error($validate->getError());
+        } else {
+            $data['userid']=session('userid');
+            $data['check_time']=date('Y-m-d H:i:s');
+            model('InstYy')->allowField(true)->save($data,['id'=>input('id/d')]);
+            htmlendjs('审核成功');
+
+        }
+    }
+
     public function del(){
         $res=model('InstYy')->where('id','in',input('post.id'))->delete();
-        return $res;
-    }
-    public function chk(){
-        $res=model('InstYy')->save(['states'=>input('post.states/d')],[
-            'id'=>input('post.id/d')
-        ]);
         return $res;
     }
 

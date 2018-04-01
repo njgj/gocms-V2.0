@@ -259,3 +259,27 @@ function getYyBm(){
     //return $max;
     return $now.'-'.substr('00'.$max,-3);
 }
+
+//导出文件（数据表格）
+function export($type,$html,$filename='导出文件'){
+    $mime = array(
+        'doc'        => 'application/msword',
+        'pdf'        => 'application/pdf',
+        'xls'        => 'application/vnd.ms-excel',
+        'ppt'        => 'application/vnd.ms-powerpoint',
+    );
+    if(preg_match("@<table(.*?)</table>@is", $html, $matchs)){
+        $str=$matchs[0];
+
+        header("Pragma: public");
+        header("Expires: 0");
+        header("Cache-Control:must-revalidate, post-check=0, pre-check=0");
+        header("Content-Type:application/force-download");
+        header("Content-Type:$mime[$type]]");
+        header("Content-Type:application/octet-stream");
+        header("Content-Type:application/download");;
+        header("Content-Disposition:attachment;filename=$filename.$type");
+        header("Content-Transfer-Encoding:binary");
+        echo $str;
+    }
+}

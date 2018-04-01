@@ -156,8 +156,6 @@ layui.use(['layer','table','form','laydate'], function(){
 });
 
 
-
-
 function getEditor(t){
     var option={
 		allowFileManager : false,
