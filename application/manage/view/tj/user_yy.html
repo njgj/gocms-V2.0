@@ -1,10 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
+{include file='public/header'}
 <body>
+<blockquote class="layui-elem-quote" style="text-align: right">
+    <form class="layui-form layui-input-inline"  lay-filter="ssform">
 
+        <div class="layui-input-inline">
+            <input type="text" name="realname" value="{$Request.get.realname}" placeholder="学生姓名" class="layui-input">
+        </div>
+        <div class="layui-input-inline">
+            <input type="text" name="daoshi" value="{$Request.get.daoshi}" placeholder="导师姓名" class="layui-input">
+        </div>
+        <div class="layui-input-inline">
+
+        </div>
+        <div class="layui-input-inline">
+            <select name="lab_no">
+                <option value="">-所属实验室-</option>
+                {$res.lab_no|default=0|getTreeOption='nclass_city',1,###}
+            </select>
+        </div>
+
+        <button class="layui-btn" lay-submit="" lay-filter="search"><i class="layui-icon layui-btn-icon"></i>查询</button>
+        <a class="layui-btn layui-btn-success" href="__MAN__/tj/user_yy/Action/xls?{$Request.get|http_build_query}">导出Excel</a>
+    </form>
+</blockquote>
+
+{if $Request.get.sj1!='' or $Request.get.sj1!=''}
+<h2 align="center">用户预约情况【{$Request.get.sj1}至{$Request.get.sj2}】</h2>
+{/if}
+<form class="layui-form" lay-filter="dataform" method="post">
+    <table width="100%" border="1" class="layui-table">
+        <thead>
+        <tr>
+            <th>学院</th>
+            <th>用户名</th>
+            <th>学生</th>
+            <th>导师</th>
+            <th>仪器品类</th>
+            <th>累计时间（分钟）</th>
+            <th>累计费用（元）</th>
+            <th>累计样品数（个）</th>
+            <th>累计次数</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name='res' id='v'}
+        <tr>
+            <td>{$v.cityid|getclassname='nclass_city',###}</td>
+            <td>{$v.username}</td>
+            <td>{$v.realname}</td>
+            <td>{$v.dsid|getUserName}</td>
+            <td>{$v.fws}</td>
+            <td>{$v.kjs}</td>
+            <td>{$v.fees}</td>
+            <td>{$v.yps_all}</td>
+            <td>{$v.cs}</td>
+
+        </tr>
+        {/volist}
+    </table>
+</form>
+
+{if $Action=='list'}
+{$res}
+{include file='public/footer'}
+{/if}
 </body>
 </html>
