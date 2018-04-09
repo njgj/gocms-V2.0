@@ -2,75 +2,73 @@
 <body class="childrenBody">
 
 <blockquote class="layui-elem-quote main_btn">
-	<p>本模板基于Layui2.*实现，支持除LayIM外所有的Layui组件。</p>
+	<p>实时数据</p>
 </blockquote>
 
 <div class="layui-row layui-col-space10 panel_box">
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;" data-url="http://fly.layui.com/case/u/3198216" target="_blank">
+		<a href="javascript:;" data-url="__MAN__/user/" title="用户管理">
 			<div class="panel_icon layui-bg-green">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span>为我点赞</span>
-				<cite>点赞地址链接</cite>
+				<span>{$arr.users}</span>
+				<cite>用户数</cite>
 			</div>
 		</a>
 	</div>
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;" data-url="https://github.com/BrotherMa/layuicms2.0" target="_blank">
+		<a href="javascript:;" data-url="__MAN__/news/" title="新闻管理">
 			<div class="panel_icon layui-bg-black">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span>Github</span>
-				<cite>模版下载链接</cite>
+				<span>{$arr.news}</span>
+				<cite>新闻数</cite>
 			</div>
 		</a>
 	</div>
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;" data-url="https://gitee.com/layuicms/layuicms2.0" target="_blank">
+		<a href="javascript:;" data-url="__MAN__/zixun" title="咨询管理">
 			<div class="panel_icon layui-bg-red">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span>码云</span>
-				<cite>模版下载链接</cite>
+				<span>{$arr.zxs}</span>
+				<cite>咨询数</cite>
 			</div>
 		</a>
 	</div>
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;" data-url="page/user/userList.html">
+		<a href="javascript:;" data-url="__MAN__/inst" title="仪器管理">
 			<div class="panel_icon layui-bg-orange">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span></span>
-				<em>用户总数</em>
-				<cite class="layui-hide">用户中心</cite>
+				<span>{$arr.yqs}</span>
+				<cite>仪器数</cite>
 			</div>
 		</a>
 	</div>
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;" data-url="page/systemSetting/icons.html">
+		<a href="javascript:;" data-url="__MAN__/inst_yy" title="预约管理">
 			<div class="panel_icon layui-bg-cyan">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span></span>
-				<em>外部图标</em>
-				<cite class="layui-hide">图标管理</cite>
+				<span>{$arr.yys}</span>
+				<cite>预约数</cite>
 			</div>
 		</a>
 	</div>
 	<div class="panel layui-col-xs12 layui-col-sm6 layui-col-md4 layui-col-lg2">
-		<a href="javascript:;">
+		<a href="javascript:;" data-url="__MAN__/video" title="视频管理">
 			<div class="panel_icon layui-bg-blue">
 				<i class="layui-icon">&#xe612;</i>
 			</div>
 			<div class="panel_word">
-				<span class="loginTime"></span>
-				<cite>上次登录时间</cite>
+				<span>{$arr.sps}</span>
+				<cite>视频数</cite>
 			</div>
 		</a>
 	</div>
@@ -121,5 +119,14 @@
 </div>
 
 {include file='public/footer'}
+<script>
+    layui.use(['layer'], function(){
+       var layer=layui.layer
+		   ,$=layui.jquery;
+        $(".panel a").on("click",function(){
+            window.parent.addTab(this, $(this).attr('title'), $(this).attr('data-url'));
+        })
+	});
+</script>
 </body>
 </html>

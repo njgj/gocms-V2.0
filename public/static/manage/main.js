@@ -95,16 +95,16 @@ layui.use(['element','jquery','layer','table'], function(){
         var id = -1,tabTitle='';
         $(document).find(".layui-tab[lay-filter=" + card + "] ul li").each(function () {
             //排除图标
-            tabTitle=$(this).find("span").html();
+            tabTitle=$(this).find("span>cite").html();
+
             if (title === tabTitle) {
                 id = $(this).attr('lay-id');
                 return false; //return false终止循环
             }
         });
-        //alert(title+'|'+tabTitle+'|'+id);
+        alert(title+'|'+tabTitle+'|'+id);
         return id;
     }
-	
 	
     // 选项卡右键事件阻止
     $(document).on("contextmenu", '.my-body .layui-tab-card > .layui-tab-title li', function () {

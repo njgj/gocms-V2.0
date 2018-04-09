@@ -17,12 +17,19 @@ class Index extends Base
 
 		//return json($res);
 		$this->assign('res',$res);
-        return $this->fetch('index');
+        return $this->fetch();
     }
     public function welcome()
     {
 		//return 'demo';
-        return $this->fetch('welcome');
+        $arr['users']=db('user_info')->count();
+        $arr['news']=db('g_news')->count();
+        $arr['sps']=db('video')->count();
+        $arr['zxs']=db('g_zixun')->count();
+        $arr['yqs']=db('inst')->count();
+        $arr['yys']=db('inst_yy')->count();
+        $this->assign('arr',$arr);
+        return $this->fetch();
     }
 
 }
