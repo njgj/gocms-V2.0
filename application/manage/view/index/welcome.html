@@ -85,31 +85,23 @@
 			<tbody>
 			<tr>
 				<td>当前版本</td>
-				<td class="version"></td>
+				<td class="version">{:config('gocms.version')}</td>
 			</tr>
 			<tr>
 				<td>开发作者</td>
-				<td class="author"></td>
+				<td class="author">{:config('gocms.author')}</td>
 			</tr>
 			<tr>
 				<td>网站首页</td>
-				<td class="homePage"></td>
+				<td class="url">{:config('gocms.url')}</td>
 			</tr>
 			<tr>
 				<td>服务器环境</td>
-				<td class="server"></td>
+				<td class="server">{:config('gocms.server')}</td>
 			</tr>
 			<tr>
 				<td>数据库版本</td>
-				<td class="dataBase"></td>
-			</tr>
-			<tr>
-				<td>最大上传限制</td>
-				<td class="maxUpload"></td>
-			</tr>
-			<tr>
-				<td>当前用户权限</td>
-				<td class="userRights"></td>
+				<td class="database">{:config('gocms.database')}</td>
 			</tr>
 			</tbody>
 		</table>
@@ -124,7 +116,7 @@
        var layer=layui.layer
 		   ,$=layui.jquery;
         $(".panel a").on("click",function(){
-            window.parent.addTab(this, $(this).attr('title'), $(this).attr('data-url'));
+            window.parent.addTab($(this), '<i class="layui-icon layui-icon-wenjian"></i> '+$(this).attr('title'), $(this).attr('data-url'));
         })
 	});
 </script>

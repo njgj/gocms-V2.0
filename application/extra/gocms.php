@@ -10,5 +10,8 @@ return [
 	'release' => 20180227,
 	'copyright' => 'GOCMS.COM',
 	'url' => '#',
+    'author' => 'gongjun',
+    'server' => 'win7',
+    'database' => 'mysql5',
 ];
 ?>

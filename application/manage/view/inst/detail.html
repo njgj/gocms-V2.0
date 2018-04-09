@@ -1,11 +1,126 @@
 {include file='public/header'}
 <body>
-
-<article>
-    <h1 align="center">{$res.title}</h1>
-    <p class="layui-bg-gray" style="padding: 10px 0; margin: 10px 0; text-align: center;">作者：{$res.author}&nbsp;&nbsp;&nbsp;&nbsp;来源：{$res.source}</p>
-    <div class="content">{$res.content}</div>
-</article>
-
+<table width="100%" class="layui-table"s>
+  <tr>
+    <td class="col">仪器设备名称</td>
+    <td>{$res.cname|default=''}</td>
+    <td rowspan="4" class="col">仪器图片</td>
+    <td rowspan="4"><img src="__STATIC__/uploadfile/images/{$res.image|default=''}"></td>
+  </tr>
+  <tr>
+    <td class="col">所属实验室</td>
+    <td>{$res.lab_no|default=''|getclassname='nclass_city',###}</td>
+  </tr>
+  <tr>
+    <td class="col">英文名称</td>
+    <td>{$res.ename|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">仪器所在单位内部编码</td>
+    <td>{$res.innerId|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">设备分类编码</td>
+    <td>{$res.instrCategory|default=''|getCodePath='nclass_select',###}</td>
+    <td class="col">仪器设备来源</td>
+    <td>{$res.instrSource|default=''|getclassname='nclass_select',###}</td>
+  </tr>
+  <tr>
+    <td class="col">规格型号</td>
+    <td>{$res.instrVersion|default=''}</td>
+    <td class="col">生产制造商</td>
+    <td>{$res.manufacturer|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">启用日期</td>
+    <td>{$res.beginDate|default=''}</td>
+    <td class="col">原值</td>
+    <td>{$res.worth|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">操作员</td>
+    <td>{$res.oper_user|default=''}</td>
+    <td class="col">是否海关监管</td>
+    <td>{$res.instrSupervise|default=''|chkisyes}</td>
+  </tr>
+  <tr>
+    <td class="col">产地国别</td>
+    <td>{$res.nation|default=''|getCodePath='nclass_nation',###}</td>
+    <td class="col">仪器设备类别</td>
+    <td>{$res.type|default=''|getclassname='nclass_select',###}</td>
+  </tr>
+  <tr>
+    <td class="col">主要学科领域</td>
+    <td>{$res.subject|default=''|getCodePath='nclass_select',###}</td>
+    <td class="col">运行状态</td>
+    <td>{$res.status|default=''|getclassname='nclass_select',###}</td>
+  </tr>
+  <tr>
+    <td class="col">主要技术指标</td>
+    <td colspan="3">{$res.technical|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">主要功能</td>
+    <td colspan="3">{$res.function|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">服务内容</td>
+    <td colspan="3">{$res.serviceContent|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">服务的典型成果</td>
+    <td colspan="3">{$res.achievement|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">对外开放共享规定</td>
+    <td colspan="3">{$res.requirement|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">参考收费标准</td>
+    <td colspan="3">{$res.fee|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">提前预约（天）</td>
+    <td>{$res.beforeTime|default=''}</td>
+    <td class="col">预约服务网址</td>
+    <td>{$res.serviceUrl|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">安放地址</td>
+    <td>{$res.region|default=''}</td>
+    <td class="col">街道</td>
+    <td>{$res.street|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">房间号</td>
+    <td>{$res.room_no|default=''}</td>
+    <td class="col">联系人</td>
+    <td>{$res.contact|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">电话</td>
+    <td>{$res.phone|default=''}</td>
+    <td class="col">电子邮箱</td>
+    <td>{$res.email|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">通讯地址</td>
+    <td>{$res.address|default=''}</td>
+    <td class="col">邮政编码</td>
+    <td>{$res.postalcode|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">共享模式</td>
+    <td>{$res.shareMode|default=''|getclassname='nclass_select',###}</td>
+    <td class="col">入网日期</td>
+    <td>{$res.regdate|default=''}</td>
+  </tr>
+  <tr>
+    <td class="col">开放时段（起）</td>
+    <td>{$res.ot_b_time|default=''}</td>
+    <td class="col">开放时段（止）</td>
+    <td>{$res.ot_e_time|default=''}</td>
+  </tr>
+</table>
 </body>
 </html>

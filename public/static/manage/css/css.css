@@ -16,6 +16,7 @@ textarea { width: 90%; }
 
 #reload-btn { position: absolute; top: 5px; right: 5px; }
 .lay-btn {   }
+.layui-table .col { background: #F7F7F7; width: 20%; text-align: center; }
 
 /*分页*/
 .pagination{overflow:hidden;display:block;border-left:1px solid #eee;float:right; margin-bottom: 10px; }
