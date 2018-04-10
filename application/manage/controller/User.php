@@ -45,7 +45,7 @@ class User extends Base
 
     public function save(){
         $data = input('post.');
-        $data['userpwd']='666666';
+        $data['userpwd']=md5('666666');
         $data['addtime']=date('Y-m-d H:i:j');
         $data['uptime']=date('Y-m-d H:i:j');
 
